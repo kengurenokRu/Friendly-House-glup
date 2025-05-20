@@ -1,0 +1,31 @@
+.modal-form {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  z-index: 99;
+
+}
+
+.modal-form__wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .7);
+  padding-top: 20vh;
+}
+
+.modal-form__close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-form__close-btn-img {
+  fill: var(--text-color-normal, #282626);
+}

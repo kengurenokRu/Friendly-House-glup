@@ -1,0 +1,20 @@
+{
+  "name": "friendly-house",
+  "version": "1.0.0",
+  "description": "gulp",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^8.0.0",
+    "gulp": "^5.0.0",
+    "gulp-cssimport": "^7.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}
