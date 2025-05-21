@@ -559,7 +559,7 @@ body {
 }
 
 .header__burger {
-    border: none;
+    border: none;    
     background-color: transparent;
     transition-duration: 0.2s;
     transition-property: fill, stroke, border, transform;
@@ -1297,7 +1297,6 @@ body {
     margin: 0 auto;
   }
 }
-/*@import "our-pets.css";*/
 .burger-menu {
   position: fixed;
   top: 90px;

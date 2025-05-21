@@ -3,10 +3,11 @@ const header__burger = $('.header__burger');
 const burgerMenu = $('.burger-menu');
 const burgerMenu__linkTtext = $('.burger-menu__link-text');
 const burgerMenu__item = $('.burger-menu__item');
-
+const burgerBorderOne = $('.header__burger-border:nth-child(1)');
+const burgerBorderTwo = $('.header__burger-border:nth-child(2)');
+const burgerBorderThree = $('.header__burger-border:nth-child(3)');
 
 let prevActiveElement;
-
 
 function addInnert(elem) {
   prevActiveElement = document.activeElement;
@@ -49,7 +50,7 @@ function activationInnert(elemsInert) {
     for (let i = 0; i < elemsInert.length; i++) {
       if (window.screen.width <= elemsInert[i].breakpoints || !elemsInert[i].breakpoints) {
         elemsInert[i].elem.inert = true
-        //console.log(elemsInert[i]);
+       // console.log(elemsInert[i]);
       }
     }
   }
@@ -59,19 +60,40 @@ function activationInnert(elemsInert) {
 }
 
 const removeInnert = activationInnert([
-    {
-        elem: burgerMenu.get(0),
-        esc: hide_burgerMenu        
-    },
-    {
-        elem: modalForm.get(0),
-        esc: hide_modalForm        
-    }
+  {
+    elem: burgerMenu.get(0),
+    esc: hide_burgerMenu
+  },
+  {
+    elem: modalForm.get(0),
+    esc: hide_modalForm
+  }
 ]);
 
 function hide_burgerMenu() {  
-    burgerMenu.hide(500);
-    removeInnert(burgerMenu.get(0));    
+  burgerBorderOne.css({
+    "transform": "rotate(0)"
+  });
+  burgerBorderTwo.css({
+    "transform": "rotate(0)"
+  });
+  burgerBorderThree.show();
+  burgerMenu.hide(500);
+  removeInnert(burgerMenu.get(0));
+}
+
+function show_burgerMenu() {  
+  burgerBorderOne.css({
+    "transform": "rotate(45deg)",
+    "transform-origin": "-2px 11px"
+  });
+  burgerBorderTwo.css({
+    "transform": "rotate(-45deg)",
+    "transform-origin": "32px 15px"
+  });
+  burgerBorderThree.hide();  
+  burgerMenu.show(500);  
+  addInnert(burgerMenu.get(0));  
 }
 
 function hide_modalForm() {
@@ -88,7 +110,7 @@ burgerMenu__item.click(function () {
   hide_burgerMenu();
 });
 
-$('.paw-button').click(function () {  
+$('.paw-button').click(function () {
   modalForm.show(500);
   addInnert(modalForm.get(0));
 });
@@ -116,9 +138,16 @@ $('.modal-form__wrapper').click(function () {
 });*/
 
 
-header__burger.click(function () { 
-    burgerMenu.show(500);
-    addInnert(burgerMenu.get(0)); 
+header__burger.click(function () {
+console.log(header__burger.hasClass("header__burger_active"));
+  if (header__burger.hasClass("header__burger_active")) {
+    hide_burgerMenu();    
+  }
+  else {
+    show_burgerMenu();    
+  }
+  header__burger.toggleClass("header__burger_active");
+  
 });
 
 

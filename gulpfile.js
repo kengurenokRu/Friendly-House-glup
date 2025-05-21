@@ -5,7 +5,7 @@ import { deleteAsync } from 'del';
 import sassPkg from 'sass';
 import gulpSass from 'gulp-sass'
 
-const prepros = false;
+const prepros = true;
 
 const sass = gulpSass(sassPkg);
 
@@ -32,22 +32,37 @@ export const js = () => gulp
             once: true
         }));
 
-    export const style = () => {
-        if (prepros) {
-            return gulp
-                .src('src/scss/**/*.scss')
+    // export const style = () => {
+    //     if (prepros) {
+    //         return gulp
+    //             .src('src/styles/scss/**/*.scss')
+    //             .pipe(sass().on('error', sass.logError))
+    //             .pipe(gulp.dest('dist/styles'))
+    //             .pipe(browserSync.stream());
+    //     }
+    //     return gulp
+    //         .src('src/styles/style.css')
+    //         .pipe(gulpCssimport({
+    //             extensions: ['css']
+    //         }))
+    //         .pipe(gulp.dest('dist/styles'))
+    //         .pipe(browserSync.stream());
+    // }
+
+
+export const style = () =>  gulp
+                .src('src/styles/scss/**/*.scss')
                 .pipe(sass().on('error', sass.logError))
-                .pipe(gulp.dest('dist/style'))
+                .pipe(gulp.dest('dist/styles'))
                 .pipe(browserSync.stream());
-        }
-        return gulp
+        
+export const css = () =>  gulp
             .src('src/styles/style.css')
             .pipe(gulpCssimport({
                 extensions: ['css']
             }))
             .pipe(gulp.dest('dist/styles'))
             .pipe(browserSync.stream());
-    }
 
     export const clear = (done) => {
         deleteSync([path.dist.base], {
@@ -69,10 +84,13 @@ export const js = () => gulp
         gulp.watch('./src/**/*.html', html);        
         gulp.watch('./src/js/**/*.js', js);
         gulp.watch(['src/fonts/**/*', 'src/img/**/*'], copy);
-        gulp.watch(prepros ? 'src/style/**/*.scss' : './src/styles/**/*.css', style)
+      //  gulp.watch(prepros ? 'src/styles/**/*.scss' : './src/styles/**/*.css', style)
+
+        gulp.watch('src/styles/**/*.scss', style);
+        gulp.watch('./src/styles/**/*.css', css)
     };
 
-    export const base = gulp.parallel(html, style, js, copy);
+    export const base = gulp.parallel(html, style, css, js, copy);
 
     export const build = gulp.series(clear, base);
 
