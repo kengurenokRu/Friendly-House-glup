@@ -160,6 +160,7 @@ body {
 }
 
 .paw-text-button {
+    display: block;
     color: var(--text-color-orange, #ff8a00);
     font-size: 14px;
     line-height: 20px;

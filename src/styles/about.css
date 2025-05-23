@@ -27,6 +27,10 @@
   text-align: right;
 }
 
+.about__link
+{
+  display: block;
+}
 @media (max-width: 1200px) {
 
   .about__container {    

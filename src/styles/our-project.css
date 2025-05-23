@@ -80,6 +80,7 @@
 }
 
 .our-project__article-big {
+  display: block;
   position: relative;
   background-image: url('../img/project5.jfif');
   width: 380px;
@@ -117,6 +118,12 @@
   display: none;
   text-align: right;
 }
+
+.our-project__link:active,
+.our-project__link:focus {
+  border: 1px solid var(--text-color-orange, #ff8a00);
+}
+
 
 @media (max-width: 1200px) {
   .our-project__article {
