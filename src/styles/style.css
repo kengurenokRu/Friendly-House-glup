@@ -1,10 +1,13 @@
-@import "global.css";
-@import "form.css";
-@import "modal-form.css";
-@import "header.css";
-@import "top.css";
-@import "about.css";
-@import "help.css";
-@import "help-us.css";
-@import "our-project.css";
-@import "burger-menu.css";
+@import "components/normalize.css";
+@import "./libs/swiper-bundle.min.css";
+
+@import "components/global.css";
+@import "components/form.css";
+@import "components/modal-form.css";
+@import "components/header.css";
+@import "components/top.css";
+@import "components/about.css";
+@import "components/help.css";
+@import "components/help-us.css";
+@import "components/our-project.css";
+@import "components/burger-menu.css";

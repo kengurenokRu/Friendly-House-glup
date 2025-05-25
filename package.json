@@ -10,10 +10,20 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "critical": "^7.2.1",
     "del": "^8.0.0",
     "gulp": "^5.0.0",
+    "gulp-avif": "^1.1.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
     "gulp-cssimport": "^7.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-image": "^6.3.1",
     "gulp-sass": "^6.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "gulp-webp": "^5.0.0",
     "sass": "^1.89.0"
   },
   "dependencies": {

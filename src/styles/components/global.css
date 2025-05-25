@@ -179,6 +179,14 @@ body {
     left: 0;
     content: '';
     background-image: url('../img/call.png');
+    background-image: -webkit-image-set(
+            url('../img/call.avif') 1x,
+            url('../img/call.webp') 1x,
+            url('../img/call.png') 1x);
+    background-image: image-set(
+            url('../img/call.avif') 1x,
+            url('../img/call.webp') 1x,
+            url('../img/call.png') 1x);
     background-size: contain;
     background-repeat: no-repeat;
     width: 24px;
@@ -190,6 +198,14 @@ body {
     left: 0;
     content: '';
     background-image: url('../img/email.png');
+    background-image: -webkit-image-set(
+            url('../img/email.avif') 1x,
+            url('../img/email.webp') 1x,
+            url('../img/email.png') 1x);
+    background-image: image-set(
+            url('../img/email.avif') 1x,
+            url('../img/email.webp') 1x,
+            url('../img/email.png') 1x);
     background-size: contain;
     background-repeat: no-repeat;
     width: 24px;
