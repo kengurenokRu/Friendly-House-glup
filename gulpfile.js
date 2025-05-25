@@ -56,7 +56,7 @@ export const img = () => gulp.src('src/img/**/*.{jpg,jpeg,jfif,png,svg,gif}', { 
         mozjpeg: ['-optimize', '-progressive'],
         gifsicle: ['--optimize'],
         svgo: true
-    }))
+    })))
     .pipe(gulp.dest('dist/img'))
     .pipe(browserSync.stream());
 /*
