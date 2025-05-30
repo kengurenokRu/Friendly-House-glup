@@ -1,0 +1,15 @@
+@font-face {
+    @include font(Comfortaa, 400)
+}
+
+@font-face {
+    @include font('Helvetica Neue Cyr', 300)
+}
+
+@font-face {
+    @include font('Helvetica Neue Cyr', 400)
+}
+
+@font-face {
+    @include font('Helvetica Neue Cyr', 500)
+}

@@ -1,0 +1,66 @@
+.header {
+    &__container {
+        padding: 21px 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include laptop {
+            padding: 30px 72px;
+        }
+
+        @include tablet {
+            padding: 30px 34px;
+        }
+
+        @include phone {
+            padding: 20px 25px;
+        }
+    }
+
+    &__phone {
+        font-size: 20px;
+        font-weight: 550;
+        line-height: 30px;
+
+        @include laptop {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__burger {
+        border: none;
+        background-color: transparent;
+        transition-duration: 0.2s;
+        transition-property: fill, stroke, border, transform;
+        cursor: pointer;
+    }
+
+    &__burger-border {
+        fill: $dark-grey;
+        transition: transform 0.2s;
+    }
+
+    &__logo {
+        padding-left: 176px;
+
+        @include laptop {
+            width: 300px;
+            padding-left: 154px;
+        }
+
+        @include tablet {
+            width: 300px;
+            padding-left: 0;
+        }
+
+        @include phone {
+            width: 161px;
+        }
+    }
+}

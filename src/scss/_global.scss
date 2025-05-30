@@ -1,0 +1,301 @@
+/*@font-face {
+    font-family: "Comfortaa";
+    src: local("Comfortaa-Regular"), local("Comfortaa Regular"),
+        url("../fonts/Comfortaa-Regular.woff") format("woff"),
+        url("../fonts/Comfortaa-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Cyr";
+    src: local("Helvetica-Neue-Cyr-Light"),
+        local("HelveticaNeueCyr-Light"),
+        local("Helvetica Neue Cyr Light"),
+        local("HelveticaNeue Cyr Light"),
+        local("HelveticaNeue-Cyr-Light"),
+        local("HelveticaNeueCyr Light"),
+        url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
+        url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Cyr";
+    src: local("Helvetica-Neue-Cyr-Medium"),
+        local("HelveticaNeueCyr-Medium"),
+        local("Helvetica Neue Cyr Medium"),
+        local("HelveticaNeue Cyr Medium"),
+        local("HelveticaNeue-Cyr-Medium"),
+        local("HelveticaNeueCyr Medium"),
+        url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
+        url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Cyr";
+    src: local("Helvetica-Neue-Cyr-Roman"),
+        local("HelveticaNeueCyr-Roman"),
+        local("Helvetica Neue Cyr Roman"),
+        local("HelveticaNeue Cyr Roman"),
+        local("HelveticaNeue-Cyr-Roman"),
+        local("HelveticaNeueCyr Roman"),
+        url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"),
+        url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}*/
+
+:root {
+    position: relative;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Helvetica Neue Cyr", "Arial", sans-serif;
+    font-weight: 300;
+    color: $dark-grey;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 130px;
+
+    @include laptop {
+        padding: 0 72px;
+    }
+
+    @include tablet {
+        padding: 0 34px;
+    }
+
+    @include phone {
+        padding: 0 25px;
+    }
+}
+
+.title_hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.title {
+    margin-bottom: 45px;
+    font-size: 50px;
+    font-family: Comfortaa, "Arial", sans-serif;
+    font-weight: 400;
+
+    @include laptop {
+        margin-bottom: 40px;
+        font-size: 44px;
+    }
+
+    @include tablet {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    @include phone {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+}
+
+.text {
+    font-size: 20px;
+    line-height: 30px;
+
+    @include laptop {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.text:not(:last-child) {
+    margin-bottom: 30px;
+
+}
+
+.subtitle {
+    margin-bottom: 40px;
+    font-weight: 550;
+    font-size: 30px;   
+}
+
+.section {
+    padding: 90px 0;
+    background-color: $white;
+
+    @include laptop {
+        padding: 70px 0;
+    }
+
+    @include tablet {
+        padding: 60px 0;
+    }
+
+    @include phone {
+        padding: 40px 0;
+    }
+}
+
+.link-arrow {
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 26px;
+    color: $orange;
+
+    @include laptop {
+        font-size: 14px;
+        line-height: 20px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    @include tablet {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    @include phone {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.link-arrow::after {
+    padding-left: 15px;
+    content: "\2192";
+}
+
+.section:nth-of-type(even) {
+    background-color: $light-grey;
+}
+
+.paw-button {
+    width: 180px;
+    border: none;
+    cursor: pointer;
+
+    @include phone {
+        width: 84px;
+    }
+}
+
+.paw-picture-button {
+    margin-bottom: 17px;
+    width: 111px;
+
+    @include laptop {
+        margin-bottom: 10px;
+        width: 83px;
+        height: 80px;
+    }
+
+    @include tablet {
+        margin-bottom: 20px;
+    }
+
+    @include phone {
+        margin-bottom: 4px;
+        width: 51px;
+        height: 50px;
+    }
+}
+
+.paw-text-button {
+    display: block;
+    color: $orange;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 550;
+    text-transform: uppercase;
+
+    @include laptop {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    @include phone {
+        font-size: 8px;
+        line-height: 12px;
+    }
+}
+
+.phone,
+.email {
+    position: relative;
+    padding-left: 40px;
+}
+
+.phone::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    background-image: url('../img/call.png');
+    background-image: -webkit-image-set(url('../img/call.avif') 1x,
+            url('../img/call.webp') 1x,
+            url('../img/call.png') 1x);
+    background-image: image-set(url('../img/call.avif') 1x,
+            url('../img/call.webp') 1x,
+            url('../img/call.png') 1x);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.email::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    background-image: url('../img/email.png');
+    background-image: -webkit-image-set(url('../img/email.avif') 1x,
+            url('../img/email.webp') 1x,
+            url('../img/email.png') 1x);
+    background-image: image-set(url('../img/email.avif') 1x,
+            url('../img/email.webp') 1x,
+            url('../img/email.png') 1x);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+}

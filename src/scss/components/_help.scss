@@ -1,0 +1,274 @@
+.help {
+    &__text_padding {
+        padding-left: 100px;
+
+        @include tablet {
+            padding-left: 80px;
+        }
+
+        @include phone {
+            padding-left: 60px;
+        }
+    }
+
+    &__text_medium {
+        font-weight: 500;
+    }
+
+    &__list {
+        list-style-type: none;
+        counter-reset: inc;
+        margin-bottom: 50px;
+        text-align: left;
+    }
+
+    &__item {
+        margin-bottom: 50px;
+    }
+
+    &__item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+
+        font-weight: 550;
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 20px;
+
+        @include laptop {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+
+        @include tablet {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+
+    &__subtitle::before {
+        margin-right: 20px;
+        padding: 10px 25px;
+        content: counter(inc);
+        counter-increment: inc;
+        font-size: 50px;
+        color: $orange;
+        background-color: $white;
+        border-radius: 50%;
+
+        @include tablet {
+            padding: 10px 20px;
+            font-size: 34px;
+        }
+
+        @include phone {
+            padding: 5px 12px;
+            font-size: 24px;
+        }
+    }
+
+    &__subtitle_margin {
+        margin-bottom: 50px;
+
+        @include laptop {
+            margin-bottom: 60px;
+        }
+
+        @include tablet {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__title_orange {
+        color: $orange;
+    }
+
+    &__flex-block {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        @include phone {}
+    }
+
+    &__pets-list {
+        display: grid;
+        grid-template-columns: 180px minmax(280px, 380px);
+        grid-template-rows: repeat(2, 139px);
+        grid-gap: 20px;
+
+        @include laptop {
+            display: grid;
+            grid-template-columns: 180px 280px;
+            grid-template-rows: repeat(2, 139px);
+            grid-gap: 20px;
+        }
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: minmax(200px, 300px) minmax(280px, 380px);
+            grid-template-rows: repeat(2, auto);
+            grid-gap: 20px;
+        }
+
+        @include phone {
+            display: none;
+        }
+    }
+
+    &__pets-list &__pets-item_one {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    &__pets-list &__pets-item_two {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    &__pets-list &__pets-item-three {
+        grid-area: 1 / 2 / 3 / 3;
+    }
+
+    &__pets-list-two {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(180px, 280px));
+        grid-template-rows: repeat(2, minmax(117px, 181px));
+        grid-gap: 20px;
+
+        @include laptop {
+            display: grid;
+            grid-template-columns: repeat(2, 180px);
+            grid-template-rows: repeat(2, 117px);
+            grid-gap: 20px;
+        }
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: minmax(200px, 300px) minmax(280px, 380px);
+            grid-template-rows: repeat(2, auto);
+            grid-gap: 20px;
+        }
+
+        @include phone {
+            display: none;
+        }
+    }
+
+    &__pets-list-two &__pets-item_one {
+        grid-area: 1 / 1 / 3 / 2;
+    }
+
+    &__pets-list-two &__pets-item_two {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    &__pets-list-two &__pets-item-three {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    &__pet-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        @include phone {
+            object-fit: contain;
+        }
+    }
+
+    &__pet-img_block {
+        display: block;
+        max-width: 580px;
+        height: 349px;
+
+        @include laptop {
+            max-width: 400px;
+        }
+
+        @include tablet {
+            max-width: 100%;
+            height: 385px;
+        }
+
+        @include phone {
+            height: 149px;
+        }
+    }
+
+    &__flex-item {
+        max-width: 580px;
+
+        @include laptop {
+            max-width: 460px;
+        }
+
+        @include tablet {
+            max-width: 100%;
+        }
+
+        @include phone {}
+    }
+
+    &__container {
+        text-align: center;
+    }
+
+    &__swiper {
+        display: none;
+
+        @include phone {
+            display: block;
+        }
+    }
+
+    &__image-block {
+        @include tablet {
+            order: 3;
+        }
+
+    }
+
+    &__text_padding_two {
+        @include tablet {
+            padding-left: 80px;
+        }
+
+        @include phone {
+            padding-left: 60px;
+        }
+    }
+
+    &__swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__swiper-slide {
+        display: flex;
+        justify-content: flex-start;
+        width: fit-content;
+    }
+
+    &__swiper-img {
+        display: block;
+        width: auto;
+        height: 131px;
+        object-fit: cover;
+    }
+
+    &__swiper-slide {
+        width: fit-content;
+    }
+}
