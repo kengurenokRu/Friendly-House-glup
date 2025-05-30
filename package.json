@@ -3,7 +3,7 @@
  "version": "1.0.0",
  "description": "Приют для бездомных животных",
  "scripts": {
-  "dev": "gulp",
+  "dev": "node --no-experimental-require-module ./node_modules/gulp/bin/gulp.js",
   "build": "gulp build"
  },
  "type": "module",
