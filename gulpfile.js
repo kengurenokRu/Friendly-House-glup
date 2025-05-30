@@ -291,7 +291,7 @@ export const webp = () =>
     .src(path.src.imgF)
     .pipe(
       gulpWebp({
-        quality: 60,
+        quality: dev ? 100 : 60,
       }),
     )
     .pipe(gulp.dest(path.dist.img))
@@ -306,7 +306,7 @@ export const avif = () =>
     .src(path.src.imgF)
     .pipe(
       gulpAvif({
-        quality: 50,
+        quality: dev ? 100 : 50,
       }),
     )
     .pipe(gulp.dest(path.dist.img))
