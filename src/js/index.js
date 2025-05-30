@@ -281,10 +281,10 @@ buttonPets.click(function (e) {
   for (let i = stop + 1; i < pets.length; i++) {
     text[k].textContent = pets[i].id;
     button[k].value = pets[i].id;
-    pic[k].src = `../img/${pets[i].pictureName}.${pets[i].extention}`;
+    pic[k].src = `../img/${pets[i].pictureName}80.${pets[i].extention}`;
     pic[k].alt = pets[i].id;
-    source[t].srcset = `../img/${pets[i].pictureName}.avif`;
-    source[t + 1].srcset = `../img/${pets[i].pictureName}.webp`;
+    source[t].srcset = `../img/${pets[i].pictureName}80.avif`;
+    source[t + 1].srcset = `../img/${pets[i].pictureName}80.webp`;
     k++;
     t += 2;
   }
@@ -292,10 +292,10 @@ buttonPets.click(function (e) {
   for (let i = 0; i < stop; i++) {
     text[k].textContent = pets[i].id;
     button[k].value = pets[i].id;
-    pic[k].src = `../img/${pets[i].pictureName}.${pets[i].extention}`;
+    pic[k].src = `../img/${pets[i].pictureName}80.${pets[i].extention}`;
     pic[k].alt = pets[i].id;
-    source[t].srcset = `../img/${pets[i].pictureName}.avif`;
-    source[t + 1].srcset = `../img/${pets[i].pictureName}.webp`;
+    source[t].srcset = `../img/${pets[i].pictureName}80.avif`;
+    source[t + 1].srcset = `../img/${pets[i].pictureName}80.webp`;
     k++;
     t += 2;
   }
