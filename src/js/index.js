@@ -263,6 +263,7 @@ buttonPets.click(function (e) {
   const container = $('.top__container')[0];
   titleOrange.textContent = pets[stop].name;
   title.textContent = pets[stop].text;
+  /*
   $(document).width() > 700 ? 
   container.style.backgroundImage = `
   url('../img/${pets[stop].pictureName}.${pets[stop].extention}'), 
@@ -281,7 +282,7 @@ buttonPets.click(function (e) {
   image-set(url('../img/${pets[stop].pictureName}-mini.avif') 1x, 
   url('../img/${pets[stop].pictureName}-mini.webp') 1x, 
   url('../img/${pets[stop].pictureName}-mini.${pets[stop].extention}') 1x)
-  `;
+  `;*/
   const pic = $('.top__pet-picture');
   const button = $('.top__pet');
   const source = $('.top__pet-source');
