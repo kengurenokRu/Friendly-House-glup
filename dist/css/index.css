@@ -256,7 +256,18 @@ body {
 }
 
 .top {
+  position: relative;
   padding-top: 0;
+}
+
+.top__back-picture {
+  position: absolute;
+  z-index: 0;
+  width: 450px;
+  height: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -60%);
 }
 
 .top__title {
@@ -288,10 +299,10 @@ body {
       url('../img/sara.jpg') 1x);
   background-image: image-set(url('../img/sara.avif') 1x,
       url('../img/sara.webp') 1x,
-      url('../img/sara.jpg') 1x);*/
+      url('../img/sara.jpg') 1x);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: auto 470px;
+  background-size: auto 470px;*/
 }
 
 .top__button {
@@ -1105,6 +1116,11 @@ body {
     padding-left: 154px;
   }
 
+  .top__back-picture {
+    width: 330px;
+    height: 330px;
+  }
+
   .top__title {
     font-size: 30px;
     line-height: 44px;
@@ -1120,7 +1136,6 @@ body {
     grid-template-rows: repeat(2, 190px);
     grid-column-gap: 350px;
     grid-row-gap: 25px;
-    background-size: auto 330px;
     justify-content: space-between;
   }
 
@@ -1382,6 +1397,12 @@ body {
     padding-left: 0;
   }
 
+  .top__back-picture {
+    width: 320px;
+    height: 320px;
+    transform: translate(-45%, -50%);
+  }
+
   .top__title {
     font-size: 24px;
     line-height: 30px;
@@ -1398,7 +1419,6 @@ body {
     grid-template-rows: auto 420px;
     grid-column-gap: 260px;
     grid-row-gap: 24px;
-    background-size: auto 290px;
     justify-content: space-between;
   }
 
@@ -1677,6 +1697,12 @@ body {
     width: 161px;
   }
 
+  .top__back-picture {
+    width: 270px;
+    height: 270px;
+    transform: translate(-50%, -70%);
+  }
+
   .top__title {
     grid-area: 1/1/2/2;
     font-size: 18px;
@@ -1702,9 +1728,9 @@ body {
         url('../img/sara-mini.jpg') 1x);
     background-image: image-set(url('../img/sara-mini.avif') 1x,
         url('../img/sara-mini.webp') 1x,
-        url('../img/sara-mini.jpg') 1x);*/
+        url('../img/sara-mini.jpg') 1x);
     background-size: 266px auto;
-    background-position: center 70px;
+    background-position: center 70px;*/
   }
 
   .top__button {
