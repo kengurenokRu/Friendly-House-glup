@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="FriendlyHouse" content="Сайт приюта для животных Friendly House, где можно взять себе в домашие любимцы и компаньоны кота, собаку и даже птицу">
+    <link rel="preload" href="./fonts/Comfortaa-400.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./fonts/HelveticaNeueCyr-300.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./fonts/HelveticaNeueCyr-400.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="./fonts/HelveticaNeueCyr-500.woff2" as="font" type="font/woff2" crossorigin="">
+    <!--<link rel="preload" href="./img/sara.jpg" as="image">
+    <link rel="preload" href="./img/sara.avif" as="image">
+    <link rel="preload" href="./img/sara.webp" as="image">
+    <link rel="preload" href="./img/sara-mini.jpg" as="image" media="(max-width: 700px)">
+    <link rel="preload" href="./img/sara-mini.avif" as="image" media="(max-width: 700px)">
+    <link rel="preload" href="./img/sara-mini.webp" as="image" media="(max-width: 700px)">-->
+    <style>@charset "UTF-8";html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}a{background-color:transparent}img{border-style:none}button,input{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button{text-transform:none}[type=button],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:ButtonText dotted 1px}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}[hidden]{display:none}:root{--swiper-theme-color:#007aff}:host{position:relative;display:block;margin-left:auto;margin-right:auto;z-index:1}.swiper{margin-left:auto;margin-right:auto;position:relative;overflow:hidden;list-style:none;padding:0;z-index:1;display:block}.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:flex;box-sizing:content-box}.swiper-wrapper{transform:translate3d(0,0,0)}.swiper-slide{flex-shrink:0;width:100%;height:100%;position:relative;display:block}:root{--swiper-navigation-size:44px}@font-face{font-family:Comfortaa;font-weight:400;font-display:swap;src:url(../fonts/Comfortaa-400.woff2) format("woff2"),url(../fonts/Comfortaa-400.woff) format("woff")}:root{position:relative;overflow-x:hidden;box-sizing:border-box;scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}*{margin:0;padding:0}a{text-decoration:none;color:inherit}ul{list-style:none;padding:0;margin:0}body{margin:0;padding:0;position:relative;overflow-x:hidden;min-width:320px;min-height:100vh;font-family:"Helvetica Neue Cyr",Arial,sans-serif;font-weight:300;color:#282626}.container{max-width:1440px;margin:0 auto;padding:0 130px}.title_hidden{position:fixed;transform:scale(0)}.title{margin-bottom:45px;font-size:50px;font-family:Comfortaa,Arial,sans-serif;font-weight:400}.section{padding:90px 0;background-color:#fff}.link-arrow{font-size:20px;font-weight:550;line-height:26px;color:#ff8a00}.link-arrow::after{padding-left:15px;content:"→"}.section:nth-of-type(2n){background-color:#f2f0f1}.paw-button{width:180px;border:none}.paw-picture-button{margin-bottom:17px;width:111px}.paw-text-button{display:block;color:#ff8a00;font-size:14px;line-height:20px;font-weight:550;text-transform:uppercase}.email,.phone{position:relative;padding-left:40px}.phone::before{position:absolute;left:0;content:"";background-image:url(../img/call.svg);background-size:contain;background-repeat:no-repeat;width:24px;height:24px}.email::before{position:absolute;left:0;content:"";background-image:url(../img/email.svg);background-size:contain;background-repeat:no-repeat;width:24px;height:24px}.header__container{padding:21px 130px;display:flex;justify-content:space-between;align-items:center}.header__phone{font-size:20px;font-weight:550;line-height:30px}.header__burger{border:none;background-color:transparent}.header__burger-border{fill:#282626}.header__logo{padding-left:176px}.top{padding-top:0}.top__title{font-size:40px;line-height:60px;font-weight:300;margin-bottom:0;align-self:end;text-align:left}.top__title-orange{font-size:60px;line-height:60px;font-weight:400;color:#ff8a00}.top__container{display:grid;grid-template-columns:minmax(300px,440px) minmax(145px,280px);grid-template-rows:325px 165px;grid-column-gap:465px;grid-row-gap:81px;justify-content:space-between;background-repeat:no-repeat;background-position:center center;background-size:auto 470px}.top__button{text-align:center}.top__paw-button{background-color:#fff}.top__pet-picture{width:80px;height:80px;-o-object-fit:contain;object-fit:contain}.top__pets{grid-area:1/2/3/3;align-self:center;display:flex;flex-direction:column;gap:30px}.top__pet{display:flex;gap:20px;height:80px;border:1px solid transparent;background-color:transparent;align-items:center}.about__container{display:flex;justify-content:space-between}.about__flex-item{max-width:480px}.about__picture{max-width:100%;height:330px;-o-object-fit:cover;object-fit:cover;-o-object-position:right;object-position:right;margin-bottom:27px}.about__title{margin-bottom:30px}.our-project__grid-item:first-child{grid-area:1/1/3/2}.our-project__article>:first-child{grid-area:one}.our-project__text-card-middle{display:none;font-size:14px;line-height:20px}.our-project__text-card-mini{display:none;font-size:14px;line-height:20px}.our-project__article-mini>.our-project__link-card{display:none;text-align:right}.help__pets-list .help__pets-item_one{grid-area:1/1/2/2}.help__pets-list .help__pets-item_two{grid-area:2/1/3/2}.help__pets-list .help__pets-item-three{grid-area:1/2/3/3}.help__pets-list-two .help__pets-item_one{grid-area:1/1/3/2}.help__pets-list-two .help__pets-item_two{grid-area:1/2/2/3}.help__pets-list-two .help__pets-item-three{grid-area:2/2/3/3}.help__swiper{display:none}.help__swiper{width:100%;height:100%}.help__swiper-slide{display:flex;justify-content:flex-start;width:-moz-fit-content;width:fit-content}.help__swiper-img{display:block;width:auto;height:131px;-o-object-fit:cover;object-fit:cover}.help__swiper-slide{width:-moz-fit-content;width:fit-content}.our-pets__grid-item:first-child{grid-area:foto1}.our-pets__grid-item:nth-child(2){grid-area:foto2}.our-pets__grid-item:nth-child(3){grid-area:foto3}.our-pets__grid-item:nth-child(4){grid-area:foto4}.our-pets__grid-item:nth-child(5){grid-area:foto5}.our-pets__grid-item:nth-child(6){grid-area:foto6}.our-pets__swiper-container{display:none;position:relative;max-width:700px;height:410px;margin:0 auto}.our-pets__swiper{max-width:75%}.our-pets__swiper-button-left,.our-pets__swiper-button-right{position:absolute;width:54px;height:54px;top:40%;z-index:10}.our-pets__swiper-button-right{right:0}.our-pets__swiper-button-left{left:0}.our-pets__swiper-picture-block{width:-moz-min-content;width:min-content;margin:0 auto}.our-pets__swiper-slide{overflow:hidden}.form{position:relative;padding:50px 100px;border-radius:20px;max-height:562px;max-width:780px;text-align:center;margin:0 auto;background-color:#f2f0f1}.form__title{font-size:30px;font-weight:700;margin-bottom:30px}.form__text{font-size:20px;line-height:30px;text-align:center}.form__text-block{margin:0 auto;text-align:center;margin-bottom:20px}.form__text_orange,.form__title_orange{color:#ff8a00}.form__contacts{font-style:normal;line-height:24px;display:flex;gap:45px;justify-content:center;margin-bottom:60px}.form__contact{font-weight:550}.form__contact:last-of-type{margin-bottom:0}.form__input-box{display:flex;gap:20px;justify-content:center}.form__label{font-size:12px;text-align:left}.form__input{width:280px;height:40px;border:none}.form__field{margin-bottom:35px;border:none}.form_block{display:block}.form__button{width:80px;border:none}.form__picture-button{width:73px}.form__text-button{display:block;color:#ff8a00;font-size:12px;line-height:16px;font-weight:550;text-transform:uppercase}.form__button-block{width:494px;margin:0 auto;text-align:right}.form__text_margin{margin-bottom:20px}.footer__map-block{grid-area:1/1/2/2;overflow:hidden}.footer__adress-block{grid-area:1/2/2/3}.footer__sosial-block{grid-area:2/1/3/3;display:flex;max-width:1120px;gap:60px;justify-content:space-between}.modal-form{position:fixed;top:0;bottom:0;right:0;left:0;overflow:hidden;overflow-y:auto;z-index:99}.modal-form__wrapper{position:relative;width:100vw;height:100vh;background:rgba(0,0,0,.7);padding-top:20vh}.modal-form__close-btn{position:absolute;top:15px;right:15px;border:none}.modal-form__close-btn-img{fill:#282626}.burger-menu{position:fixed;top:90px;bottom:0;right:0;left:130px;overflow:hidden;overflow-y:auto;z-index:99;padding-top:30px}.burger-menu__burger{padding:70px 40px 50px 20px;background-color:#f2f0f1;border-bottom:10px solid #ff8a00}.burger-menu__wrapper{max-width:394px}.burger-menu__link-text{display:block;font-size:20px;line-height:30px;font-weight:550;text-align:left;padding:15px 0 15px 20px}.burger-menu__item:not(:last-child){border-bottom:1px solid #ff8a00}.burger-menu__burger-list{display:flex;flex-direction:column;align-items:center;gap:0}.burger-menu__item{width:100%}.burger-menu__rect{position:absolute;top:3px;z-index:-1}@media (max-width:1200px){.container{padding:0 72px}.title{margin-bottom:40px;font-size:44px}.section{padding:70px 0}.link-arrow{font-size:14px;line-height:20px;font-size:18px;line-height:24px}.paw-picture-button{margin-bottom:10px;width:83px;height:80px}.paw-text-button{font-size:12px;line-height:18px}.header__container{padding:30px 72px}.header__phone{font-size:18px;line-height:24px}.header__logo{width:300px;padding-left:154px}.top__title{font-size:30px;line-height:44px}.top__title-orange{font-size:44px;line-height:54px}.top__container{grid-template-columns:minmax(180px,300px) minmax(145px,200);grid-template-rows:repeat(2,190px);grid-column-gap:350px;grid-row-gap:25px;background-size:auto 330px;justify-content:space-between}.top__pets{gap:20px}.about__container{gap:20px}.about__flex-item{max-width:378px}.about__picture{height:308px;margin-bottom:13px}.about__title{margin-bottom:20px}.our-project__article-mini>.our-project__link-card{display:block}.form{padding:50px 93px;max-height:486px;max-width:680px}.form__title{font-size:24px;margin-bottom:20px}.form__text{font-size:18px;line-height:26px}.form__text-block{max-width:480px}.form__contacts{margin-bottom:40px}.form__input{width:200px;height:35px}.form__button-block{width:420px}.form__text_inline{display:inline;margin-bottom:20px;line-height:20px}.burger-menu{left:72px}}@media (max-width:940px){.container{padding:0 34px}.title{margin-bottom:30px;font-size:30px}.section{padding:60px 0}.link-arrow{font-size:14px;line-height:20px}.paw-picture-button{margin-bottom:20px}.header__container{padding:30px 34px}.header__phone{display:none}.header__logo{width:300px;padding-left:0}.top__title{font-size:24px;line-height:30px;grid-area:1/1/2/3}.top__title-orange{font-size:40px;line-height:44px}.top__container{grid-template-columns:180px 145px;grid-template-rows:auto 420px;grid-column-gap:260px;grid-row-gap:24px;background-size:auto 290px;justify-content:space-between}.top__button{grid-area:2/1/3/2;align-self:center}.top__pet-picture{width:60px;height:60px}.top__pets{grid-area:2/2/3/3;gap:15px}.top__pet{height:60px}.about__container{display:flex;flex-direction:column;gap:30px}.about__flex-item{max-width:100%}.about__picture{width:100%;height:auto;margin-bottom:10px}.our-project__text-card-middle{display:block}.our-pets__swiper-container{display:block}.our-pets__swiper-pet-img{height:368px;width:auto;-o-object-position:right center;object-position:right center}.our-pets__swiper-pet-caption{font-size:18px;line-height:24px}.form{padding:40px 60px;max-height:440px;max-width:540px}.form__title{font-size:18px}.form__text{font-size:14px;line-height:20px}.form__text-block{max-width:380px}.form__contacts{gap:41px;justify-content:center;margin-bottom:30px}.form__input-box{margin-bottom:20px}.footer__map-block{grid-area:2/1/3/2;align-items:center}.footer__adress-block{grid-area:1/1/2/2;display:flex;gap:120px;align-items:flex-end;justify-content:space-between}.footer__sosial-block{grid-area:3/1/4/2}.burger-menu{left:34px}}@media (max-width:700px){.container{padding:0 25px}.title{margin-bottom:20px;font-size:20px}.section{padding:40px 0}.link-arrow{font-size:14px;line-height:20px}.paw-button{width:84px}.paw-picture-button{margin-bottom:4px;width:51px;height:50px}.paw-text-button{font-size:8px;line-height:12px}.header__container{padding:20px 25px}.header__logo{width:161px}.top__title{grid-area:1/1/2/2;font-size:18px;line-height:26px;align-self:flex-start}.top__title-orange{font-size:26px;line-height:44px}.top__container{display:grid;grid-template-columns:minmax(270px,600px);grid-template-rows:325px repeat(2,auto);grid-column-gap:0;grid-row-gap:20px;justify-items:center;background-size:266px auto;background-position:center 70px}.top__button{grid-area:3/1/4/2}.top__pets{grid-area:2/1/3/2;flex-direction:row;gap:10px}.top__pet{flex-direction:column;gap:5px;align-items:center;height:85px}.about__container{gap:20px}.about__title{margin-bottom:10px}.our-project__text-card-middle{display:none}.help__swiper{display:block}.our-pets__grid-item:first-child{grid-area:foto1}.our-pets__grid-item:nth-child(2){grid-area:foto2}.our-pets__grid-item:nth-child(3){grid-area:foto4}.our-pets__grid-item:nth-child(4){grid-area:foto6}.our-pets__grid-item:nth-child(5){grid-area:foto5}.our-pets__grid-item:nth-child(6){grid-area:foto3}.our-pets__swiper-container{max-width:600px;height:214px}.our-pets__swiper{max-width:91%}.our-pets__swiper-button-left,.our-pets__swiper-button-right{width:26px;height:26px}.our-pets__swiper-pet-img{height:184px;-o-object-fit:contain;object-fit:contain}.our-pets__swiper-pet-caption{font-size:14px;line-height:20px}.form{padding:30px 29px;max-height:513px;max-width:500px}.form__title{font-size:16px;margin-bottom:14px}.form__contacts{display:flex;flex-direction:column;gap:10px}.form__input-box{flex-direction:column;gap:14px;align-items:center}.form__picture-button{width:61px}.form__text-button{font-size:8px;line-height:12px}.form__button-block{text-align:center}.burger-menu{left:25px;top:72px}.burger-menu__wrapper{max-width:270px}}</style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const createLink = url => {
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = url;
+                document.head.append(link);
+            };
+            createLink('css/index.min.css');
+        })
+    </script>
+    <script defer="" src="https://api-maps.yandex.ru/2.1/?apikey=d7aca0e0-c619-44c9-a9d7-57071f8ba034&amp;lang=ru_RU" type="text/javascript"></script>
+    <script defer="" src="js/index.min.js"></script>
+    <title>Friendly House</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <button class="header__burger" aria-label="Открыть меню" aria-haspopup="menu">
+                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" tabindex="0">
+                    <rect class="header__burger-border" width="40" height="3" rx="1" />
+                    <rect class="header__burger-border" y="9" width="40" height="3" rx="1" />
+                    <rect class="header__burger-border" y="18" width="29" height="3" rx="1" />
+                </svg></button>
+            <img class="header__logo" src="img/logo.svg" alt="Friendly House- приют для животных" width="356"
+                height="72">
+            <a class="phone header__phone" href="tel:88493003957">8 (849) 300 - 39 -57</a>
+        </div>
+    </header>
+    <main>
+        <h1 class="title_hidden">Friendly House</h1>
+        <section class="section top" id="top">
+            <div class="container top__container">
+                <h2 class="title top__title"><span class="top__title-orange">Сара ждёт,</span>
+                    <span class="top__title-text">когда найдётся её
+                        человек</span>
+                </h2>
+                <div class="top__button">
+                    <button class="paw-button top__paw-button" type="button">
+                        <img class="paw-picture-button" src="img/paw.svg" alt="Изображене лапки животного" width="111"
+                            height="101">
+                        <span class="paw-text-button">Жми на лапку, чтобы помочь!</span>
+                    </button>
+                </div>                
+                <div class="top__pets">
+                    <button class="top__pet" type="button" value="Борис">
+                        <picture class="top__pet-pic">
+                            <source class="top__pet-source" srcset="./img/boris80.avif" type="image/avif">
+                            <source class="top__pet-source" srcset="./img/boris80.webp" type="image/webp">
+                            <img class="top__pet-picture" src="./img/boris80.jpg" alt="Борис" width="80" height="80">
+                        </picture>
+                        <span class="top__pet-text">Борис</span>
+                    </button>
+                    <button class="top__pet" type="button" value="Луи">
+                        <picture class="top__pet-pic">
+                            <source class="top__pet-source" srcset="./img/lui80.avif" type="image/avif">
+                            <source class="top__pet-source" srcset="./img/lui80.webp" type="image/webp">
+                            <img loading = "lazy" class="top__pet-picture" src="./img/lui80.jpg" alt="Луи" width="80" height="80">
+                        </picture>
+                        <span class="top__pet-text">Луи</span>
+                    </button>
+                    <button class="top__pet" type="button" value="Питер">
+                        <picture class="top__pet-pic">
+                            <source class="top__pet-source" srcset="./img/piter80.avif" type="image/avif">
+                            <source class="top__pet-source" srcset="./img/piter80.webp" type="image/webp">
+                            <img loading = "lazy" class="top__pet-picture" src="./img/piter80.jpg" alt="Питер" width="80" height="80">
+                        </picture>
+                        <span class="top__pet-text">Питер</span>
+                    </button>
+                    <button class="top__pet" type="button" value="Кенни">
+                        <picture class="top__pet-pic">
+                            <source class="top__pet-source" srcset="./img/kenni80.avif" type="image/avif">
+                            <source class="top__pet-source" srcset="./img/kenni80.webp" type="image/webp">
+                            <img loading = "lazy" class="top__pet-picture" src="./img/kenni80.jpg" alt="Изображение собаки" width="80"
+                                height="80">
+                        </picture>
+                        <span class="top__pet-text">Кенни</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section about" id="about">
+            <div class="container about__container">
+                <div class="about__flex-item">
+                    <h2 class="title about__title">О приюте</h2>
+                    <p class="about__text text">Приют "Friendly House" - это целый комплекс для бездомных и брошенных
+                        животных. </p>
+                    <p class="about__text text">В приюте работает сплочённая команда, которая занимается помощью
+                        бездомным животным в
+                        течении многих лет.
+                        Мы заботимся о качестве жизни наших подопечных и осуществляем профессиональный медицинский уход.
+                    </p>
+                </div>
+                <figure>
+                    <picture class="about__picture">
+                        <source srcset="img/about-pi.avif" type="image/avif">
+                        <source srcset="img/about-pi.webp" type="image/webp">
+                        <img loading = "lazy" class="about__picture" src="img/about-pi.jpg" alt="Изображение собаки на фоне дома"
+                            width="580" height="330">
+                    </picture>
+                    <figcaption class="about__picture-caption">
+                        <a class="link-arrow" href="#">СМИ о нас</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="section our-project" id="our-project">
+            <div class="container">
+                <h2 class="title our-project__title">Наши проекты</h2>
+                <div class="our-project__grid">
+                    <div class="our-project__grid-item">
+                        <a class="our-project__article our-project__link" href="#">
+                            <picture>
+                                <source srcset="./img/project1.avif" type="image/avif">
+                                <source srcset="./img/project1.webp" type="image/webp">
+                                <img loading = "lazy" class="our-project__img-card" src="./img/project1.jpg"
+                                    alt="Изображение сабаки в конуре в виде домика" width="280" height="180">
+                            </picture>
+                            <h3 class="our-project__title-card">Новый дом для животных</h3>
+                            <p class="our-project__text-card-big">Приют появился практически одновременно с созданием
+                                Фонда в...
+                            </p>
+                            <p class="our-project__text-card-middle">Приют появился практически одновременно с
+                                созданием...
+                            </p>
+                            <p class="our-project__text-card-mini">Приют появился практически одно...
+                            </p>
+                            <p class="link-arrow our-project__link-card">Подробнее</p>
+                        </a>
+                        <a class="our-project__article our-project__link" href="#">
+                            <picture>
+                                <source srcset="./img/project2.avif" type="image/avif">
+                                <source srcset="./img/project2.webp" type="image/webp">
+                                <img loading = "lazy" class="our-project__img-card" src="./img/project2.jpg"
+                                    alt="Изображение сабаки в курточке" width="280" height="180">
+                            </picture>
+                            <h3 class="our-project__title-card">Маленькие модники</h3>
+                            <p class="our-project__text-card-big">Наши котики и собачки тоже любят наряжаться, чтобы
+                                красиво
+                                выглядеть ...</p>
+                            <p class="our-project__text-card-middle">Наши котики и собачки тоже любят наряжаться, чтобы
+                                красиво...</p>
+                            <p class="our-project__text-card-mini">Наши котики и собачки тоже лю...</p>
+                            <p class="link-arrow our-project__link-card">Подробнее</p>
+                        </a>
+                        <a class="our-project__article our-project__link" href="#">
+                            <picture>
+                                <source srcset="./img/project3.avif" type="image/avif">
+                                <source srcset="./img/project3.webp" type="image/webp">
+                                <img loading = "lazy" class="our-project__img-card" src="./img/project3.jpg"
+                                    alt="Изображение девушки с собакой" width="280" height="180">
+                            </picture>
+                            <h3 class="our-project__title-card">Поиграй со мной!</h3>
+                            <p class="our-project__text-card-big">Новая программа нашего приюта “Поиграй со мной”.
+                                Приводите своих...</p>
+                            <p class="our-project__text-card-middle">Новая программа нашего приюта “Поиграй со мной”.
+                                Приводите...</p>
+                            <p class="our-project__text-card-mini">Новая программа нашего приюта...</p>
+                            <p class="link-arrow our-project__link-card">Подробнее</p>
+                        </a>
+                        <a class="our-project__article our-project__link" href="#">
+                            <picture>
+                                <source srcset="./img/project4.avif" type="image/avif">
+                                <source srcset="./img/project4.webp" type="image/webp">
+                                <img loading = "lazy" class="our-project__img-card" src="./img/project4.jpg"
+                                    alt="Изображение облизывающийся сабаки" width="280" height="180">
+                            </picture>
+                            <h3 class="our-project__title-card">Конкурс “Лучшее фото”</h3>
+                            <p class="our-project__text-card-big">Приходи к нам в Friendly House и делай классные
+                                фотографии наших животн...</p>
+                            <p class="our-project__text-card-middle">Приходи к нам в Friendly House и делай классные
+                                фотографии...</p>
+                            <p class="our-project__text-card-mini">Приходи к нам в Friendly House и...</p>
+                            <p class="link-arrow our-project__link-card">Подробнее</p>
+                        </a>
+                    </div>
+                    <div class="our-project__grid-item">
+                        <a class="our-project__article-big our-project__link" href="#">
+                            <h3
+                                class="our-project__title-card our-project__title-card_white our-project__title-card_position">
+                                Собака лучший друг человека, или.... собаки?</h3>
+                            <p class="link-arrow our-project__link-card our-project__link-card_position">Подробнее</p>
+                        </a>
+                    </div>
+                    <div class="our-project__grid-item">
+                        <article class="our-project__article-mini">
+                            <h3 class="our-project__title-card our-project__title-card_mini">Больше проектов</h3>
+                            <div class="our-project__other-project">
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project6.avif" type="image/avif">
+                                        <source srcset="./img/project6.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project6.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project7.avif" type="image/avif">
+                                        <source srcset="./img/project7.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project7.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project8.avif" type="image/avif">
+                                        <source srcset="./img/project8.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project8.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project9.avif" type="image/avif">
+                                        <source srcset="./img/project9.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project9.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project10.avif" type="image/avif">
+                                        <source srcset="./img/project10.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project10.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project11.avif" type="image/avif">
+                                        <source srcset="./img/project11.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project11.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project12.avif" type="image/avif">
+                                        <source srcset="./img/project12.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project12.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project13.avif" type="image/avif">
+                                        <source srcset="./img/project13.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project13.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project14.avif" type="image/avif">
+                                        <source srcset="./img/project14.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project14.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project15.avif" type="image/avif">
+                                        <source srcset="./img/project15.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project15.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project16.avif" type="image/avif">
+                                        <source srcset="./img/project16.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project16.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                                <a class="our-project__link" href="#">
+                                    <picture>
+                                        <source srcset="./img/project17.avif" type="image/avif">
+                                        <source srcset="./img/project17.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project17.jpg"
+                                            alt="Разные проекты" width="80" height="70">
+                                    </picture>
+                                </a>
+                            </div>
+                            <a class="link-arrow our-project__link-card" href="#">Подробнее</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section help" id="help">
+            <div class="container help__container">
+                <h2 class="title help__title help__title_orange">Как ты можешь нам помочь?</h2>
+                <ol class="help__list">
+                    <li class="help__item">
+                        <div class="help__flex-block">
+                            <div class="help__flex-item">
+                                <h3 class="help__subtitle">Финансово</h3>
+                                <p class="help__text help__text_padding text">Мы будем рады любым пожертвованиям. Деньги
+                                    пойдут на корм, лечение и
+                                    уход, а также, на обустройство территории, где обитают наши маленькие питомцы.</p>
+                                <div class="swiper help__swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide help__swiper-slide">
+                                            <picture>
+                                                <source srcset="img/help-us-1-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-1-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-1-slider.jpg"
+                                                    alt="Фото кролика с морковкой" width="180" height="139">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide help__swiper-slide">
+                                            <picture>
+                                                <source srcset="img/help-us-2-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-2-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-2-slider.jpg"
+                                                    alt="Фото облизывающийся собаки" width="180" height="139">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide help__swiper-slide">
+                                            <picture>
+                                                <source srcset="img/help-us-3-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-3-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-3-slider.jpg"
+                                                    alt="Фото собаки в медикинском конусе" width="380" height="298">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="help__pets-list">
+                                <li class="help__pets-item help__pets-item_one">
+                                    <picture>
+                                        <source srcset="img/help-us-1.avif" type="image/avif">
+                                        <source srcset="img/help-us-1.webp" type="image/webp">
+                                        <img loading = "lazy" class="help__pet-img" src="img/help-us-1.jpg"
+                                            alt="Фото кролика с морковкой" width="180" height="139">
+                                    </picture>
+                                </li>
+                                <li class="help__pets-item help__pets-item_two">
+                                    <picture>
+                                        <source srcset="img/help-us-2.avif" type="image/avif">
+                                        <source srcset="img/help-us-2.webp" type="image/webp">
+                                        <img loading = "lazy" class="help__pet-img" src="img/help-us-2.jpg"
+                                            alt="Фото облизывающийся собаки" width="180" height="139">
+                                    </picture>
+                                </li>
+                                <li class="help__pets-item help__pets-item-three">
+                                    <picture>
+                                        <source srcset="img/help-us-3.avif" type="image/avif">
+                                        <source srcset="img/help-us-3.webp" type="image/webp">
+                                        <img loading = "lazy" class="help__pet-img" src="img/help-us-3.jpg"
+                                            alt="Фото собаки в медикинском конусе" width="380" height="298">
+                                    </picture>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="help__item">
+                        <h3 class="help__subtitle help__subtitle_margin help__subtitle_no-flex">Стать волонером</h3>
+                        <div class="help__flex-block">
+                            <picture class="help__image-block">
+                                <source srcset="img/help-us-4.avif" type="image/avif">
+                                <source srcset="img/help-us-4.webp" type="image/webp">
+                                <img loading = "lazy" class="help__pet-img help__pet-img_block" src="img/help-us-4.jpg"
+                                    alt="Фото девушки с собакой" width="580" height="349">
+                            </picture>
+                            <div class="help__flex-item">
+                                <p class="help__text text help__text_padding_two">Наш приют "Friendly House" привлекает
+                                    волонтеров для оказания помощи в
+                                    самых разных форматах! От финансовой помощи и набирающего популярность
+                                    интеллектуального
+                                    волонтерства до
+                                    помощи руками. </p>
+                                <p class="help__text text help__text_padding_two">Нам всегда нужна помощь с выгулом
+                                    подопечных,
+                                    уборкой помещений, привезти в приют корм или медикаменты, помочь с перевозкой
+                                    животных в
+                                    клиники,
+                                    забрать и привезти вещи и много всего другого.
+                                    Мы всегда рады любой помощи, присоединяйтесь к нашей дружной команде! :)</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="help__item">
+                        <div class="help__flex-block">
+                            <div class="help__flex-item">
+                                <h3 class="help__subtitle">Стать опекуном</h3>
+                                <p class="help__text help__text_padding help__text_medium text"> <b>Хотите друга, но не
+                                        можете
+                                        взять домой? Проект опеки - идеальное решение!</b>
+                                </p>
+                                <p class="help__text help__text_padding text">Взять под опеку животное, у которого еще
+                                    нет
+                                    опекуна, – это как завести
+                                    питомца, о котором всю жизнь мечтал, но не мог себе этого позволить по каким-либо
+                                    причинам.
+                                </p>
+
+                                <div class="swiper help__swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide help__swiper-slide">
+                                            <picture>
+                                                <source srcset="img/help-us-5-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-5-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-5-slider.jpg" alt="Фото кошки"
+                                                    width="280" height="382">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide help__swiper-slide">
+                                            <picture>
+                                                <source srcset="img/help-us-6-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-6-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-6-slider.jpg"
+                                                    alt="Фото кошки и руки человека" width="280" height="181">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide help__swiper-slide">
+                                            <picture>
+                                                <source srcset="img/help-us-7-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-7-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-7-slider.jpg"
+                                                    alt="Фото мужчины обнимающего собаку" width="280" height="181">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="help__pets-list-two">
+                                <li class="help__pets-item help__pets-item_one">
+                                    <picture>
+                                        <source srcset="img/help-us-5.avif" type="image/avif">
+                                        <source srcset="img/help-us-5.webp" type="image/webp">
+                                        <img loading = "lazy" class="help__pet-img" src="img/help-us-5.jpg" alt="Фото кошки" width="280"
+                                            height="382">
+                                    </picture>
+                                </li>
+                                <li class="help__pets-item help__pets-item_two">
+                                    <picture>
+                                        <source srcset="img/help-us-6.avif" type="image/avif">
+                                        <source srcset="img/help-us-6.webp" type="image/webp">
+                                        <img loading = "lazy" class="help__pet-img" src="img/help-us-6.jpg"
+                                            alt="Фото кошки и руки человека" width="280" height="181">
+                                    </picture>
+                                </li>
+                                <li class="help__pets-item help__pets-item_three">
+                                    <picture>
+                                        <source srcset="img/help-us-7.avif" type="image/avif">
+                                        <source srcset="img/help-us-7.webp" type="image/webp">
+                                        <img loading = "lazy" class="help__pet-img" src="img/help-us-7.jpg"
+                                            alt="Фото мужчины обнимающего собаку" width="280" height="181">
+                                    </picture>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ol>
+                <button class="paw-button" type="submit">
+                    <img loading = "lazy" class="paw-picture-button" src="img/paw.svg" alt="Изображене лапки животного" width="111"
+                        height="101">
+                    <span class="paw-text-button">Жми на лапку, чтобы помочь!</span>
+                </button>
+            </div>
+        </section>
+        <section class="section our-pets" id="our-pets">
+            <div class="container">
+                <h2 class="title our-pets__title">Наши питомцы</h2>
+                <ul class="our-pets__grid">
+                    <li class="our-pets__grid-item">
+                        <figure class="our-pets__picture-block">
+                            <picture>
+                                <source srcset="./img/pets1.avif" type="image/avif">
+                                <source srcset="./img/pets1.webp" type="image/webp">
+                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets1.jpg" alt="Твинки и Пинки, 2 месяца"
+                                    width="480" height="280">
+                            </picture>
+                            <figcaption class="our-pets__pet-caption">Твинки и Пинки, 2 месяца</figcaption>
+                        </figure>
+                    </li>
+                    <li class="our-pets__grid-item">
+                        <figure class="our-pets__picture-block">
+                            <picture>
+                                <source srcset="./img/pets2.avif" type="image/avif">
+                                <source srcset="./img/pets2.webp" type="image/webp">
+                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets2.jpg" alt="Мурзик, 6 месяцев"
+                                    width="280" height="280">
+                            </picture>
+                            <figcaption class="our-pets__pet-caption">Мурзик, 6 месяцев</figcaption>
+                        </figure>
+                    </li>
+                    <li class="our-pets__grid-item">
+                        <figure class="our-pets__picture-block">
+                            <picture>
+                                <source srcset="./img/pets3.avif" type="image/avif">
+                                <source srcset="./img/pets3.webp" type="image/webp">
+                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets3.jpg" alt="Джек, 1 год" width="280"
+                                    height="280">
+                            </picture>
+                            <figcaption class="our-pets__pet-caption">Джек, 1 год</figcaption>
+                        </figure>
+                    </li>
+                    <li class="our-pets__grid-item">
+                        <figure class="our-pets__picture-block">
+                            <picture>
+                                <source srcset="./img/pets4.avif" type="image/avif">
+                                <source srcset="./img/pets4.webp" type="image/webp">
+                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets4.jpg" alt="Джерри, 3 недели" width="280"
+                                    height="280">
+                            </picture>
+                            <figcaption class="our-pets__pet-caption">Джерри, 3 недели</figcaption>
+                        </figure>
+                    </li>
+                    <li class="our-pets__grid-item">
+                        <figure class="our-pets__picture-block">
+                            <picture>
+                                <source srcset="./img/pets5-6.avif" type="image/avif">
+                                <source srcset="./img/pets5-6.webp" type="image/webp">
+                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets5-6.jpg" alt="Рокки и Сеня, 2 и 3 года"
+                                    width="180" height="280">
+                            </picture>
+                            <figcaption class="our-pets__pet-caption">Рокки и Сеня, 2 и 3 года</figcaption>
+                        </figure>
+                    </li>
+                    <li class="our-pets__grid-item">
+                        <figure class="our-pets__picture-block">
+                            <picture>
+                                <source srcset="./img/pets7.avif" type="image/avif">
+                                <source srcset="./img/pets7.webp" type="image/webp">
+                                <img loading = "lazy" class="our-pets__pet-img our-pets__pet-img_big" src="./img/pets7.jpg"
+                                    alt="Миша (кот) и Ричард (пёс), 3 года и 5 лет" width="380" height="650">
+                            </picture>
+                            <figcaption class="our-pets__pet-caption">Миша (кот) и Ричард (пёс), 3 года и 5 лет
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <div class="our-pets__swiper-container">
+                    <div class="swiper our-pets__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide our-pets__swiper-slide">
+                                <figure class="our-pets__swiper-picture-block">
+                                    <picture>
+                                        <source srcset="./img/pets1-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets1-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets1-slider.jpg"
+                                            alt="Твинки и Пинки, 2 месяца" width="480" height="280">
+                                    </picture>
+                                    <figcaption class="our-pets__swiper-pet-caption">Твинки и Пинки, 2 месяца
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide our-pets__swiper-slide">
+                                <figure class="our-pets__swiper-picture-block">
+                                    <picture>
+                                        <source srcset="./img/pets2-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets2-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets2-slider.jpg"
+                                            alt="Мурзик, 6 месяцев" width="280" height="280">
+                                    </picture>
+                                    <figcaption class="our-pets__swiper-pet-caption">Мурзик, 6 месяцев</figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide our-pets__swiper-slide">
+                                <figure class="our-pets__swiper-picture-block">
+                                    <picture>
+                                        <source srcset="./img/pets7-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets7-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets7-slider.jpg"
+                                            alt="Миша (кот) и Ричард (пёс), 3 года и 5 лет" width="380" height="650">
+                                    </picture>
+                                    <figcaption class="our-pets__swiper-pet-caption">Миша (кот) и Ричард (пёс), 3 года и
+                                        5 лет
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide our-pets__swiper-slide">
+                                <figure class="our-pets__swiper-picture-block">
+                                    <picture>
+                                        <source srcset="./img/pets3-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets3-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets3-slider.jpg" alt="Джек, 1 год"
+                                            width="280" height="280">
+                                    </picture>
+                                    <figcaption class="our-pets__swiper-pet-caption">Джек, 1 год</figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide our-pets__swiper-slide">
+                                <figure class="our-pets__swiper-picture-block">
+                                    <picture>
+                                        <source srcset="./img/pets4-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets4-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets4-slider.jpg"
+                                            alt="Джерри, 3 недели" width="280" height="280">
+                                    </picture>
+                                    <figcaption class="our-pets__swiper-pet-caption">Джерри, 3 недели</figcaption>
+                                </figure>
+                            </div>
+                            <div class="swiper-slide our-pets__swiper-slide">
+                                <figure class="our-pets__swiper-picture-block">
+                                    <picture>
+                                        <source srcset="./img/pets5-6-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets5-6-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets5-6-slider.jpg"
+                                            alt="Рокки и Сеня, 2 и 3 года" width="180" height="280">
+                                    </picture>
+                                    <figcaption class="our-pets__swiper-pet-caption">Рокки и Сеня, 2 и 3 года
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                        </div>
+                    </div>
+                    <img loading = "lazy" class="our-pets__swiper-button-left" src="img/left.svg" alt="Листать влево" width="54"
+                        height="54">
+                    <img loading = "lazy" class="our-pets__swiper-button-right" src="img/right.svg" alt="Листать вправо" width="54"
+                        height="54">
+                </div>
+            </div>
+        </section>
+        <section class="section help-us" id="help-us">
+            <div class="container">
+                <form class="form help-us__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                    <h2 class="title form__title form__title_orange">Ты можешь помочь нам!</h2>
+                    <div class="form__text-block">
+                        <p class="form__text form__text_inline">Хочешь забрать питомца, стать волонтером, или
+                            опекуном?</p>
+                        <p class="form__text form__text_orange form__text_inline">Свяжись с нами!</p>
+                    </div>
+
+                    <address class="form__contacts">
+                        <p class="form__text form__contact"><a class="phone" href="tel:88493003957">8 (849)
+                                300-39-57</a>
+                        </p>
+                        <p class="form__text form__contact"><a class="email"
+                                href="mailto:FriendlyHouse@gmail.com">FriendlyHouse@gmail.com</a>
+                        </p>
+                    </address>
+                    <fieldset class="form__field">
+                        <legend class="form__text form__text_margin">Или оставь свои контакты и мы сами свяжемся с
+                            тобой!</legend>
+                        <div class="form__input-box">
+                            <label class="form__label form_block">Номер телефона
+                                <input class="form__input form_block" type="text" id="tel-sec">
+                            </label>
+                            <label class="form__label form_block">E-mail
+                                <input class="form__input form_block" type="text" id="email-sec">
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="form__button-block">
+                        <button class="form__button" type="submit">
+                            <img loading = "lazy" class="form__picture-button" src="img/paw.svg" alt="Изображене лапки животного"
+                                width="73" height="71">
+                            <span class="form__text-button">Отправить</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__map-block" id="map"></div>
+            <div class="footer__adress-block">
+                <div class="footer__company">
+                    <h2 class="title footer__subtitle" id="contacts">Friendly House</h2>
+                    <p class="footer__mini-title">приют для животных</p>
+                    <p class="footer__contact-adress adress">103929, Москва, Пятницкое шоссе, дом 28</p>
+                </div>
+                <address class="footer__contact-list">
+                    <p class="footer__contact phone"><a class="footer__contact-name" href="tel:88493003957">8 (849) 300
+                            - 39 -57</a>
+                    </p>
+                    <p class="footer__contact email"><a class="footer__contact-name"
+                            href="mailto:FriendlyHouse@gmail.com">FriendlyHouse@gmail.com</a></p>
+                </address>
+            </div>
+            <div class="footer__sosial-block">
+                <figure>
+                    <img loading = "lazy" class="footer__logo" src="img/logo-footer.svg" alt="Friendly House- приют для животных"
+                        width="358" height="42">
+                    <figcaption class="footer__logo-text">приют для животных Friendly House® 2011-2021</figcaption>
+                </figure>
+                <div class="footer__sosial-list-block">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="http://vk.com">
+                                <svg class="footer__social" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.9999 0.799805C9.39588 0.799805 0.799881 9.39581 0.799881 19.9998C0.799881 30.6038 9.39588 39.1998 19.9999 39.1998C30.6039 39.1998 39.1999 30.6038 39.1999 19.9998C39.1999 9.39581 30.6039 0.799805 19.9999 0.799805ZM27.3839 22.4618C27.3839 22.4618 29.0819 24.1378 29.4999 24.9158C29.5119 24.9318 29.5179 24.9478 29.5219 24.9558C29.6919 25.2418 29.7319 25.4638 29.6479 25.6298C29.5079 25.9058 29.0279 26.0418 28.8639 26.0538H25.8639C25.6559 26.0538 25.2199 25.9998 24.6919 25.6358C24.2859 25.3518 23.8859 24.8858 23.4959 24.4318C22.9139 23.7558 22.4099 23.1718 21.9019 23.1718C21.8374 23.1717 21.7732 23.1818 21.7119 23.2018C21.3279 23.3258 20.8359 23.8738 20.8359 25.3338C20.8359 25.7898 20.4759 26.0518 20.2219 26.0518H18.8479C18.3799 26.0518 15.9419 25.8878 13.7819 23.6098C11.1379 20.8198 8.75788 15.2238 8.73788 15.1718C8.58788 14.8098 8.89788 14.6158 9.23588 14.6158H12.2659C12.6699 14.6158 12.8019 14.8618 12.8939 15.0798C13.0019 15.3338 13.3979 16.3438 14.0479 17.4798C15.1019 19.3318 15.7479 20.0838 16.2659 20.0838C16.363 20.0827 16.4584 20.058 16.5439 20.0118C17.2199 19.6358 17.0939 17.2258 17.0639 16.7258C17.0639 16.6318 17.0619 15.6478 16.7159 15.1758C16.4679 14.8338 16.0459 14.7038 15.7899 14.6558C15.8935 14.5128 16.03 14.3969 16.1879 14.3178C16.6519 14.0858 17.4879 14.0518 18.3179 14.0518H18.7799C19.6799 14.0638 19.9119 14.1218 20.2379 14.2038C20.8979 14.3618 20.9119 14.7878 20.8539 16.2458C20.8359 16.6598 20.8179 17.1278 20.8179 17.6798C20.8179 17.7998 20.8119 17.9278 20.8119 18.0638C20.7919 18.8058 20.7679 19.6478 21.2919 19.9938C21.3602 20.0367 21.4392 20.0595 21.5199 20.0598C21.7019 20.0598 22.2499 20.0598 23.7339 17.5138C24.1916 16.6943 24.5893 15.8428 24.9239 14.9658C24.9539 14.9138 25.0419 14.7538 25.1459 14.6918C25.2226 14.6527 25.3077 14.6328 25.3939 14.6338H28.9559C29.3439 14.6338 29.6099 14.6918 29.6599 14.8418C29.7479 15.0798 29.6439 15.8058 28.0179 18.0078L27.2919 18.9658C25.8179 20.8978 25.8179 20.9958 27.3839 22.4618Z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://t.me/test">
+
+                                <svg class="footer__social" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1002_203)">
+                                        <path
+                                            d="M38.3998 19.2C38.3998 24.2922 36.377 29.1758 32.7763 32.7765C29.1756 36.3772 24.292 38.4 19.1998 38.4C14.1077 38.4 9.2241 36.3772 5.6234 32.7765C2.0227 29.1758 -0.000152588 24.2922 -0.000152588 19.2C-0.000152588 14.1078 2.0227 9.22425 5.6234 5.62355C9.2241 2.02285 14.1077 0 19.1998 0C24.292 0 29.1756 2.02285 32.7763 5.62355C36.377 9.22425 38.3998 14.1078 38.3998 19.2ZM19.8886 14.1744C18.0214 14.952 14.287 16.56 8.69025 18.9984C7.78305 19.3584 7.30545 19.7136 7.26225 20.0592C7.19025 20.6424 7.92225 20.8728 8.91825 21.1872L9.33825 21.3192C10.3174 21.6384 11.6374 22.0104 12.3214 22.0248C12.9454 22.0392 13.639 21.7848 14.4046 21.2568C19.6342 17.7264 22.3342 15.9432 22.5022 15.9048C22.6222 15.876 22.7902 15.8424 22.9006 15.9432C23.0134 16.0416 23.0014 16.2312 22.9894 16.2816C22.9174 16.5912 20.0446 19.26 18.559 20.6424C18.0958 21.0744 17.767 21.3792 17.6998 21.4488C17.5519 21.6 17.4015 21.7488 17.2486 21.8952C16.3366 22.7736 15.655 23.4312 17.2846 24.5064C18.0694 25.0248 18.6982 25.4496 19.3246 25.8768C20.0062 26.3424 20.6878 26.8056 21.571 27.3864C21.7942 27.5304 22.0103 27.6864 22.219 27.8352C23.0134 28.4016 23.731 28.9104 24.6118 28.8288C25.1254 28.7808 25.6558 28.3008 25.9246 26.8608C26.5606 23.46 27.811 16.0944 28.099 13.0584C28.1166 12.806 28.1062 12.5525 28.0678 12.3024C28.0453 12.1006 27.9476 11.9147 27.7942 11.7816C27.5759 11.6309 27.3155 11.5528 27.0502 11.5584C26.3302 11.5704 25.219 11.9568 19.8886 14.1744Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1002_203">
+                                            <rect width="40" height="40" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://ru.pinterest.com/">
+                                <svg class="footer__social" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1002_206)">
+                                        <path
+                                            d="M20.0004 0C8.95574 0 -0.000152588 8.95487 -0.000152588 20.0005C-0.000152588 28.1903 4.92446 35.2251 11.9716 38.3185C11.9152 36.9221 11.9609 35.2446 12.3198 33.7272C12.7045 32.1026 14.8932 22.8287 14.8932 22.8287C14.8932 22.8287 14.2542 21.5518 14.2542 19.6646C14.2542 16.701 15.9722 14.4862 18.1106 14.4862C19.9296 14.4862 20.8086 15.8523 20.8086 17.4887C20.8086 19.3174 19.6429 22.0508 19.0429 24.5862C18.5414 26.7087 20.107 28.4385 22.1999 28.4385C25.9891 28.4385 28.5409 23.5718 28.5409 17.8046C28.5409 13.4226 25.5891 10.1415 20.2193 10.1415C14.1522 10.1415 10.3727 14.6656 10.3727 19.719C10.3727 21.4626 10.8865 22.6908 11.6916 23.641C12.0614 24.0785 12.1127 24.2544 11.9788 24.7569C11.8829 25.1246 11.6624 26.0103 11.5716 26.3615C11.4388 26.8682 11.0286 27.0487 10.5701 26.8621C7.77574 25.721 6.47421 22.661 6.47421 19.221C6.47421 13.539 11.2655 6.72718 20.7681 6.72718C28.4045 6.72718 33.4301 12.2528 33.4301 18.1856C33.4301 26.0303 29.0681 31.8918 22.6383 31.8918C20.4798 31.8918 18.4486 30.7241 17.7527 29.399C17.7527 29.399 16.5916 34.0062 16.346 34.8974C15.9219 36.4395 15.0916 37.981 14.3327 39.1815C16.1729 39.7257 18.0819 40.002 20.0009 40.0021C31.045 40.001 39.9999 31.0456 39.9999 20.0005C39.9999 8.95487 31.045 0 20.0004 0Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1002_206">
+                                            <rect width="40" height="40" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer__social-item">
+                            <a class="footer__social-link" href="https://www.stumbleupon.com/">
+                                <svg class="footer__social" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1002_208)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M35.7953 7.73535C38.5267 11.2396 40.0068 15.557 39.9999 20C39.9999 31.0441 31.044 39.9999 20.0005 39.9999C12.2297 39.9999 5.49277 35.5661 2.18201 29.0917H10.8989C15.0528 29.0917 17.9543 26.8528 17.9543 23.2738C17.9543 15.6887 9.20405 18.7789 9.20405 16.0871C9.20405 14.7902 10.2446 14.3184 12.1487 14.3184H18.2153C19.8969 14.3184 21.8748 14.62 21.8748 16.4548V22.4994C21.8748 26.8764 25.2928 29.0912 28.8353 29.0912C32.4384 29.0912 35.7948 26.8764 35.7948 22.4994V7.73535H35.7953Z" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M20.0004 1.94593e-05C24.0138 -0.00559095 27.9352 1.20209 31.2501 3.46463V22.641C31.2501 23.9703 30.1629 25.0579 28.8357 25.0579C27.507 25.0579 26.4209 23.9703 26.4209 22.641V16.8949C26.4209 12.3077 24.0993 10.3995 21.0757 10.3995H11.2352C7.67267 10.3995 4.71729 12.6672 4.71729 16.2631C4.71729 18.1031 5.50549 20.7995 9.23318 21.4682C12.2696 22.0149 13.468 21.8559 13.468 23.4805C13.468 25.0579 11.7009 25.0579 9.36805 25.0579H0.646521C0.21571 23.4065 -0.00161659 21.7067 -0.000145166 20C-0.000145166 8.95847 8.95677 1.94593e-05 20.0004 1.94593e-05Z" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1002_208">
+                                            <rect width="40" height="40" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__author">
+                        <p class="footer__text">Design by Anastasia Ilina</p>
+                        <p class="footer__text">ilina9825@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <div class="modal-form" hidden>
+        <div class="modal-form__wrapper">
+            <form class="form modal-form__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                <button class="modal-form__close-btn">
+                    <svg class="modal-form__close-btn-img" width="42" height="42" viewBox="0 0 42 42"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)" />
+                        <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)" />
+                    </svg>
+                </button>
+                <h2 class="title form__title form__title_orange">Ты можешь помочь нам!</h2>
+                <div class="form__text-block">
+                    <p class="form__text form__text_inline">Хочешь забрать питомца, стать волонтером, или
+                        опекуном?</p>
+                    <p class="form__text form__text_orange form__text_inline">Свяжись с нами!</p>
+                </div>
+                <address class="form__contacts">
+                    <p class="form__text form__contact"><a class="phone" href="tel:88493003957">8 (849)
+                            300-39-57</a>
+                    </p>
+                    <p class="form__text form__contact"><a class="email"
+                            href="mailto:FriendlyHouse@gmail.com">FriendlyHouse@gmail.com</a>
+                    </p>
+                </address>
+                <fieldset class="form__field">
+                    <legend class="form__text form__text_margin">Или оставь свои контакты и мы сами свяжемся с
+                        тобой!</legend>
+                    <div class="form__input-box">
+                        <label class="form__label form_block">Номер телефона
+                            <input class="form__input form_block" type="text" id="tel">
+                        </label>
+                        <label class="form__label form_block">E-mail
+                            <input class="form__input form_block" type="text" id="email">
+                        </label>
+                    </div>
+                </fieldset>
+                <div class="form__button-block">
+                    <button class="form__button" type="submit">
+                        <img loading = "lazy" class="form__picture-button" src="img/paw.svg" alt="Изображене лапки животного" width="111"
+                            height="101">
+                        <span class="form__text-button">Отправить</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="burger-menu" hidden>
+        <div class="burger-menu__wrapper">
+            <svg class="burger-menu__rect" width="52" height="30" viewBox="0 0 52 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg" aria-label="Закрыть модальное окно">
+                <path d="M46.3984 28.5H1.5V2.59668L46.3984 28.5Z" fill="#F2F0F1" stroke="#FF8A00" stroke-width="3" />
+            </svg>
+            <nav class="burger-menu__burger">
+                <ul class="burger-menu__burger-list">
+                    <li class="burger-menu__item"><a class="burger-menu__link-text" href="#about">О приюте</a></li>
+                    <li class="burger-menu__item"><a class="burger-menu__link-text" href="#our-project">Наши проекты</a>
+                    </li>
+                    <li class="burger-menu__item"><a class="burger-menu__link-text" href="#help">Как ты можешь помочь
+                            нам?</a></li>
+                    <li class="burger-menu__item"><a class="burger-menu__link-text" href="#our-pets">Наши питомцы</a>
+                    </li>
+                    <li class="burger-menu__item"><a class="burger-menu__link-text" href="#help-us">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>    
+</html>
