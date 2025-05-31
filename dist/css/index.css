@@ -8,28 +8,28 @@
   font-family: Comfortaa;
   font-weight: 400;
   font-display: swap;
-  src: url("./fonts/Comfortaa-400.woff2") format("woff2"), url("./fonts/Comfortaa-400.woff") format("woff");
+  src: url("../fonts/Comfortaa-400.woff2") format("woff2"), url("../fonts/Comfortaa-400.woff") format("woff");
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
   font-weight: 300;
   font-display: swap;
-  src: url("./fonts/HelveticaNeueCyr-300.woff2") format("woff2"), url("./fonts/HelveticaNeueCyr-300.woff") format("woff");
+  src: url("../fonts/HelveticaNeueCyr-300.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-300.woff") format("woff");
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
   font-weight: 400;
   font-display: swap;
-  src: url("./fonts/HelveticaNeueCyr-400.woff2") format("woff2"), url("./fonts/HelveticaNeueCyr-400.woff") format("woff");
+  src: url("../fonts/HelveticaNeueCyr-400.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-400.woff") format("woff");
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
   font-weight: 500;
   font-display: swap;
-  src: url("./fonts/HelveticaNeueCyr-500.woff2") format("woff2"), url("./fonts/HelveticaNeueCyr-500.woff") format("woff");
+  src: url("../fonts/HelveticaNeueCyr-500.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-500.woff") format("woff");
 }
 
 /*@font-face {
@@ -261,21 +261,6 @@ body {
 
 .top {
   padding-top: 0;
-  /*
-  &__picture {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    grid-area: 1 / 2 / 3 / 3;
-
-    @include tablet {
-      grid-area: 2 / 2 / 3 / 3;
-    }
-
-    @include phone {
-      grid-area: 2 / 1 / 3 / 2;
-    }
-  }*/
 }
 
 .top__title {
@@ -301,9 +286,13 @@ body {
   grid-column-gap: 465px;
   grid-row-gap: 81px;
   justify-content: space-between;
-  background-image: url("../img/sara.png");
-  background-image: -webkit-image-set(url("../img/sara.avif") 1x, url("../img/sara.webp") 1x, url("../img/sara.png") 1x);
-  background-image: image-set(url("../img/sara.avif") 1x, url("../img/sara.webp") 1x, url("../img/sara.png") 1x);
+  /*  background-image: url('./img/sara.png');
+    background-image: -webkit-image-set(url('./img/sara.avif') 1x,
+        url('./img/sara.webp') 1x,
+        url('./img/sara.png') 1x);
+    background-image: image-set(url('./img/sara.avif') 1x,
+        url('./img/sara.webp') 1x,
+        url('./img/sara.png') 1x);*/
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto 470px;
