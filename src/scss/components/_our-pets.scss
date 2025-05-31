@@ -2,7 +2,6 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    /*grid-template-rows: repeat(2, 322px);*/
     justify-content: space-between;
     gap: 44px 20px;
     grid-template-areas:
@@ -11,7 +10,6 @@
 
     @include laptop {
       grid-template-columns: repeat(13, 1fr);
-      /* grid-template-rows: repeat(2, 235px);*/
       gap: 40px 20px;
       grid-template-areas:
         "foto1 foto1 foto1 foto1 foto1 foto1 foto2 foto2 foto2 foto6 foto6 foto6 foto6"

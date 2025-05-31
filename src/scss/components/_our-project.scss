@@ -11,12 +11,12 @@
       row-gap: 33px;
     }
 
-    @include tablet {      
-        column-gap: 80px;
+    @include tablet {
+      column-gap: 80px;
       row-gap: 20px;
     }
 
-     @include phone {
+    @include phone {
       display: grid;
       grid-template-columns: auto;
       grid-template-rows: repeat(3, auto);
@@ -177,13 +177,13 @@
   &__article-big {
     display: block;
     position: relative;
-    background-image: url('../img/project5.jfif');
+    background-image: url('../img/project5.jpg');
     background-image: -webkit-image-set(url('../img/project5.avif') 1x,
         url('../img/project5.webp') 1x,
-        url('../img/project5.jfif') 1x);
+        url('../img/project5.jpg') 1x);
     background-image: image-set(url('../img/project5.avif') 1x,
         url('../img/project5.webp') 1x,
-        url('../img/project5.jfif') 1x);
+        url('../img/project5.jpg') 1x);
     width: 380px;
     height: 450px;
     background-size: cover;
@@ -306,4 +306,3 @@
     }
   }
 }
-

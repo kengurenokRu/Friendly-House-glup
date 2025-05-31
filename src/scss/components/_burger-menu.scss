@@ -43,11 +43,29 @@
     line-height: 30px;
     font-weight: 550;
     text-align: left;
-    padding: 15px 0 15px 20px;
+    padding: 15px 0 15px 39px;
+
+
+    @include laptop {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 13px 0 13px 39px;
+    }
+
+    @include phone {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 15px 0 15px 10px;
+    }
   }
 
-  &__item:not(:last-child) {
+  &__item {
     border-bottom: 1px solid $orange;
+  }
+
+  &__item:nth-last-child(1),
+  &__item:nth-last-child(2) {
+    border-bottom: none;
   }
 
   &__button {
@@ -70,4 +88,38 @@
     top: 3px;
     z-index: -1;
   }
+
+  &__item_phone {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  &__link-text_phone {
+    position: relative;
+    padding-left: 70px;
+
+    @include phone {
+      padding-left: 40px;
+    }
+  }
+
+  &__link-text_phone::before {
+    position: absolute;
+
+    content: '';
+    background-image: url('../img/call.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    left: 39px;
+
+    @include phone {
+      left: 10px;
+    }
+  }
+
 }

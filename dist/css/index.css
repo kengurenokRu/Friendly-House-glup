@@ -8,80 +8,29 @@
   font-family: "Comfortaa";
   font-weight: 400;
   font-display: swap;
-  src: url("./fonts/Comfortaa-400.woff2") format("woff2"), url("./fonts/Comfortaa-400.woff") format("woff");
+  src: url("../fonts/Comfortaa-400.woff2") format("woff2"), url("../fonts/Comfortaa-400.woff") format("woff");
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
   font-weight: 300;
   font-display: swap;
-  src: url("./fonts/HelveticaNeueCyr-300.woff2") format("woff2"), url("./fonts/HelveticaNeueCyr-300.woff") format("woff");
+  src: url("../fonts/HelveticaNeueCyr-300.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-300.woff") format("woff");
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
   font-weight: 400;
   font-display: swap;
-  src: url("./fonts/HelveticaNeueCyr-400.woff2") format("woff2"), url("./fonts/HelveticaNeueCyr-400.woff") format("woff");
+  src: url("../fonts/HelveticaNeueCyr-400.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-400.woff") format("woff");
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
   font-weight: 500;
   font-display: swap;
-  src: url("./fonts/HelveticaNeueCyr-500.woff2") format("woff2"), url("./fonts/HelveticaNeueCyr-500.woff") format("woff");
+  src: url("../fonts/HelveticaNeueCyr-500.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-500.woff") format("woff");
 }
-
-/*@font-face {
-    font-family: "Comfortaa";
-    src: local("Comfortaa-Regular"), local("Comfortaa Regular"),
-        url("../fonts/Comfortaa-Regular.woff") format("woff"),
-        url("../fonts/Comfortaa-Regular.woff2") format("woff2");
-    font-weight: 400;
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: "Helvetica Neue Cyr";
-    src: local("Helvetica-Neue-Cyr-Light"),
-        local("HelveticaNeueCyr-Light"),
-        local("Helvetica Neue Cyr Light"),
-        local("HelveticaNeue Cyr Light"),
-        local("HelveticaNeue-Cyr-Light"),
-        local("HelveticaNeueCyr Light"),
-        url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
-        url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
-    font-weight: 300;
-    font-display: fallback;
-}
-
-@font-face {
-    font-family: "Helvetica Neue Cyr";
-    src: local("Helvetica-Neue-Cyr-Medium"),
-        local("HelveticaNeueCyr-Medium"),
-        local("Helvetica Neue Cyr Medium"),
-        local("HelveticaNeue Cyr Medium"),
-        local("HelveticaNeue-Cyr-Medium"),
-        local("HelveticaNeueCyr Medium"),
-        url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
-        url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
-    font-weight: 500;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Helvetica Neue Cyr";
-    src: local("Helvetica-Neue-Cyr-Roman"),
-        local("HelveticaNeueCyr-Roman"),
-        local("Helvetica Neue Cyr Roman"),
-        local("HelveticaNeue Cyr Roman"),
-        local("HelveticaNeue-Cyr-Roman"),
-        local("HelveticaNeueCyr Roman"),
-        url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"),
-        url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
-    font-weight: 400;
-    font-display: swap;
-}*/
 
 :root {
   position: relative;
@@ -207,7 +156,7 @@ body {
   position: absolute;
   left: 0;
   content: "";
-  background-image: url("./img/call.svg");
+  background-image: url("../img/call.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 24px;
@@ -218,7 +167,7 @@ body {
   position: absolute;
   left: 0;
   content: "";
-  background-image: url("./img/email.svg");
+  background-image: url("../img/email.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 24px;
@@ -267,7 +216,7 @@ body {
   height: 450px;
   top: 50%;
   left: 50%;
-  transform: translate(-30%, -60%);
+  transform: translate(-34%, -60%);
 }
 
 .top__title {
@@ -293,16 +242,6 @@ body {
   grid-column-gap: 465px;
   grid-row-gap: 81px;
   justify-content: space-between;
-  /*background-image: url('../img/sara.jpg');
-  background-image: -webkit-image-set(url('../img/sara.avif') 1x,
-      url('../img/sara.webp') 1x,
-      url('../img/sara.jpg') 1x);
-  background-image: image-set(url('../img/sara.avif') 1x,
-      url('../img/sara.webp') 1x,
-      url('../img/sara.jpg') 1x);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: auto 470px;*/
 }
 
 .top__button {
@@ -314,8 +253,8 @@ body {
 }
 
 .top__pet-picture {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
   -o-object-fit: contain;
   object-fit: contain;
 }
@@ -331,7 +270,8 @@ body {
 .top__pet {
   display: flex;
   gap: 20px;
-  height: 80px;
+  height: 84px;
+  padding: 3px;
   cursor: pointer;
   border: 1px solid transparent;
   background-color: transparent;
@@ -464,9 +404,9 @@ body {
 .our-project__article-big {
   display: block;
   position: relative;
-  background-image: url("../img/project5.jfif");
-  background-image: -webkit-image-set(url("../img/project5.avif") 1x, url("../img/project5.webp") 1x, url("../img/project5.jfif") 1x);
-  background-image: image-set(url("../img/project5.avif") 1x, url("../img/project5.webp") 1x, url("../img/project5.jfif") 1x);
+  background-image: url("../img/project5.jpg");
+  background-image: -webkit-image-set(url("../img/project5.avif") 1x, url("../img/project5.webp") 1x, url("../img/project5.jpg") 1x);
+  background-image: image-set(url("../img/project5.avif") 1x, url("../img/project5.webp") 1x, url("../img/project5.jpg") 1x);
   width: 380px;
   height: 450px;
   background-size: cover;
@@ -662,7 +602,6 @@ body {
 .our-pets__grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  /*grid-template-rows: repeat(2, 322px);*/
   justify-content: space-between;
   gap: 44px 20px;
   grid-template-areas: "foto1 foto1 foto1 foto1 foto1 foto2 foto2 foto2 foto6 foto6 foto6 foto6" "foto3 foto3 foto3 foto4 foto4 foto4 foto5 foto5 foto6 foto6 foto6 foto6";
@@ -1037,11 +976,16 @@ body {
   line-height: 30px;
   font-weight: 550;
   text-align: left;
-  padding: 15px 0 15px 20px;
+  padding: 15px 0 15px 39px;
 }
 
-.burger-menu__item:not(:last-child) {
+.burger-menu__item {
   border-bottom: 1px solid #ff8a00;
+}
+
+.burger-menu__item:nth-last-child(1),
+.burger-menu__item:nth-last-child(2) {
+  border-bottom: none;
 }
 
 .burger-menu__button {
@@ -1063,6 +1007,26 @@ body {
   position: absolute;
   top: 3px;
   z-index: -1;
+}
+
+.burger-menu__item_phone {
+  display: none;
+}
+
+.burger-menu__link-text_phone {
+  position: relative;
+  padding-left: 70px;
+}
+
+.burger-menu__link-text_phone::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/call.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  left: 39px;
 }
 
 @media (max-width: 1200px) {
@@ -1252,7 +1216,6 @@ body {
 
   .our-pets__grid {
     grid-template-columns: repeat(13, 1fr);
-    /* grid-template-rows: repeat(2, 235px);*/
     gap: 40px 20px;
     grid-template-areas: "foto1 foto1 foto1 foto1 foto1 foto1 foto2 foto2 foto2 foto6 foto6 foto6 foto6" "foto3 foto3 foto3 foto4 foto4 foto4 foto5 foto5 foto5 foto6 foto6 foto6 foto6";
   }
@@ -1354,6 +1317,12 @@ body {
   .burger-menu {
     left: 72px;
   }
+
+  .burger-menu__link-text {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 13px 0 13px 39px;
+  }
 }
 
 @media (max-width: 940px) {
@@ -1428,8 +1397,8 @@ body {
   }
 
   .top__pet-picture {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
   }
 
   .top__pets {
@@ -1438,7 +1407,7 @@ body {
   }
 
   .top__pet {
-    height: 60px;
+    height: 64px;
   }
 
   .about__container {
@@ -1653,6 +1622,10 @@ body {
   .burger-menu {
     left: 34px;
   }
+
+  .burger-menu__item_phone {
+    display: block;
+  }
 }
 
 @media (max-width: 700px) {
@@ -1700,7 +1673,7 @@ body {
   .top__back-picture {
     width: 270px;
     height: 270px;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -80%);
   }
 
   .top__title {
@@ -1722,15 +1695,6 @@ body {
     grid-column-gap: 0px;
     grid-row-gap: 20px;
     justify-items: center;
-    /*background-image: url('../img/sara-mini.png');
-    background-image: -webkit-image-set(url('../img/sara-mini.avif') 1x,
-        url('../img/sara-mini.webp') 1x,
-        url('../img/sara-mini.jpg') 1x);
-    background-image: image-set(url('../img/sara-mini.avif') 1x,
-        url('../img/sara-mini.webp') 1x,
-        url('../img/sara-mini.jpg') 1x);
-    background-size: 266px auto;
-    background-position: center 70px;*/
   }
 
   .top__button {
@@ -2001,5 +1965,19 @@ body {
 
   .burger-menu__wrapper {
     max-width: 270px;
+  }
+
+  .burger-menu__link-text {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 15px 0 15px 10px;
+  }
+
+  .burger-menu__link-text_phone {
+    padding-left: 40px;
+  }
+
+  .burger-menu__link-text_phone::before {
+    left: 10px;
   }
 }

@@ -9,7 +9,7 @@
     height: 450px;
     top: 50%;
     left: 50%;
-    transform: translate(-30%, -60%);
+    transform: translate(-34%, -60%);
 
     @include laptop {
       width: 330px;
@@ -25,7 +25,7 @@
     @include phone {
       width: 270px;
       height: 270px;
-      transform: translate(-50%, -70%);
+      transform: translate(-50%, -80%);
     }
 
   }
@@ -86,24 +86,13 @@
     grid-template-rows: 325px 165px;
     grid-column-gap: 465px;
     grid-row-gap: 81px;
-    justify-content: space-between;
-    /*background-image: url('../img/sara.jpg');
-    background-image: -webkit-image-set(url('../img/sara.avif') 1x,
-        url('../img/sara.webp') 1x,
-        url('../img/sara.jpg') 1x);
-    background-image: image-set(url('../img/sara.avif') 1x,
-        url('../img/sara.webp') 1x,
-        url('../img/sara.jpg') 1x);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto 470px;*/
+    justify-content: space-between;   
 
     @include laptop {
       grid-template-columns: minmax(180px, 300px) minmax(145px, 200);
       grid-template-rows: repeat(2, 190px);
       grid-column-gap: 350px;
-      grid-row-gap: 25px;
-     // background-size: auto 330px;
+      grid-row-gap: 25px;     
       justify-content: space-between;
     }
 
@@ -111,8 +100,7 @@
       grid-template-columns: 180px 145px;
       grid-template-rows: auto 420px;
       grid-column-gap: 260px;
-      grid-row-gap: 24px;
-    //  background-size: auto 290px;
+      grid-row-gap: 24px;    
       justify-content: space-between;
     }
 
@@ -122,16 +110,7 @@
       grid-template-rows: 325px repeat(2, auto);
       grid-column-gap: 0px;
       grid-row-gap: 20px;
-      justify-items: center;
-      /*background-image: url('../img/sara-mini.png');
-      background-image: -webkit-image-set(url('../img/sara-mini.avif') 1x,
-          url('../img/sara-mini.webp') 1x,
-          url('../img/sara-mini.jpg') 1x);
-      background-image: image-set(url('../img/sara-mini.avif') 1x,
-          url('../img/sara-mini.webp') 1x,
-          url('../img/sara-mini.jpg') 1x);
-      background-size: 266px auto;
-      background-position: center 70px;*/
+      justify-items: center;      
     }
   }
 
@@ -153,13 +132,13 @@
   }
 
   &__pet-picture {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     object-fit: contain;
 
     @include tablet {
-      width: 60px;
-      height: 60px;
+      width: 55px;
+      height: 55px;
     }
   }
 
@@ -189,14 +168,15 @@
   &__pet {
     display: flex;
     gap: 20px;
-    height: 80px;
+    height: 84px;
+    padding: 3px;
     cursor: pointer;
     border: 1px solid transparent;
     background-color: transparent;
     align-items: center;
 
     @include tablet {
-      height: 60px;
+      height: 64px;
     }
 
     @include phone {

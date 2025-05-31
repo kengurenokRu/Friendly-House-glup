@@ -275,29 +275,29 @@ buttonPets.click(function (e) {
   const text = $('.top__pet-text');
   const backSource = $('.top__back-source');
   const backPic = $('.top__back-picture');
+  
+  if ($(document).width() > 700) {
+    backSource[0].srcset = `../img/${pets[stop].pictureName}.avif`;
+    backSource[1].srcset = `../img/${pets[stop].pictureName}.webp`;
+    backPic[0].src = `../img/${pets[stop].pictureName}.${pets[stop].extention}`;
+    backPic[0].alt = pets[stop].id;
+  }
+  else {
+    backSource[0].srcset = `../img/${pets[stop].pictureName}-mini.avif`;
+    backSource[1].srcset = `../img/${pets[stop].pictureName}-mini.webp`;
+    backPic[0].src = `../img/${pets[stop].pictureName}-mini.${pets[stop].extention}`;
+    backPic[0].alt = pets[stop].id;
+  };
 
   let k = 0;
   let t = 0;
   for (let i = stop + 1; i < pets.length; i++) {
     text[k].textContent = pets[i].id;
     button[k].value = pets[i].id;
-    pic[k].src = `./img/${pets[i].pictureName}80.${pets[i].extention}`;
+    pic[k].src = `../img/${pets[i].pictureName}80.${pets[i].extention}`;
     pic[k].alt = pets[i].id;
-    source[t].srcset = `./img/${pets[i].pictureName}80.avif`;
-    source[t + 1].srcset = `./img/${pets[i].pictureName}80.webp`;
-
-    if ($(document).width() > 700) {
-      backSource[t].srcset = `./img/${pets[i].pictureName}.avif`;
-      backSource[t + 1].srcset = `./img/${pets[i].pictureName}.webp`;
-      backPic[k].src = `./img/${pets[i].pictureName}.${pets[i].extention}`;
-      backPic[k].alt = pets[i].id;
-    }
-    else {
-      backSource[t].srcset = `./img/${pets[i].pictureName}-mini.avif`;
-      backSource[t + 1].srcset = `./img/${pets[i].pictureName}-mini.webp`;
-      backPic[k].src = `./img/${pets[i].pictureName}-mini.${pets[i].extention}`;
-      backPic[k].alt = pets[i].id;
-    };
+    source[t].srcset = `../img/${pets[i].pictureName}80.avif`;
+    source[t + 1].srcset = `../img/${pets[i].pictureName}80.webp`;
     k++;
     t += 2;
   }
@@ -308,7 +308,7 @@ buttonPets.click(function (e) {
     pic[k].src = `../img/${pets[i].pictureName}80.${pets[i].extention}`;
     pic[k].alt = pets[i].id;
     source[t].srcset = `../img/${pets[i].pictureName}80.avif`;
-    source[t + 1].srcset = `../img/${pets[i].pictureName}80.webp`;
+    source[t + 1].srcset = `../img/${pets[i].pictureName}80.webp`;    
     k++;
     t += 2;
   }
