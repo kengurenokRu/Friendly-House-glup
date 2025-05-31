@@ -12,6 +12,9 @@
     <link rel="preload" href="./img/sara.jpg" as="image">
     <link rel="preload" href="./img/sara.avif" as="image">
     <link rel="preload" href="./img/sara.webp" as="image">
+    <link rel="preload" href="./img/sara-mini.jpg" as="image" media="(max-width: 700px)">
+    <link rel="preload" href="./img/sara-mini.avif" as="image" media="(max-width: 700px)">
+    <link rel="preload" href="./img/sara-mini.webp" as="image" media="(max-width: 700px)">
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const createLink = url => {
@@ -50,7 +53,7 @@
                         человек</span>
                 </h2>
                 <div class="top__button">
-                    <button class="paw-button top__paw-button" type="submit">
+                    <button class="paw-button top__paw-button" type="button">
                         <img class="paw-picture-button" src="img/paw.svg" alt="Изображене лапки животного" width="111"
                             height="101">
                         <span class="paw-text-button">Жми на лапку, чтобы помочь!</span>
