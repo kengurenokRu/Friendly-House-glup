@@ -378,8 +378,10 @@ const develop = (ready) => {
   ready();
 };
 
-export const base = gulp.parallel(html, scss, css, js, img, svg, webp, avif, copy);
+export const base = gulp.parallel(html, scss,  js, img, svg, webp, avif, copy);
 
 export const build = gulp.series(clear, base, critCSS);
 
-export default gulp.series(develop, base, server);
+//export default gulp.series(develop, css, base, server);
+
+export default gulp.series(clear, css, base, critCSS);

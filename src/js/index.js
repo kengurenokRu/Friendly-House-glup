@@ -174,7 +174,7 @@ function init() {
     balloonContent: 'Friendly House'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/pin.svg',
+    iconImageHref: './img/pin.svg',
     iconImageSize: [30, 42]
   });
   
@@ -182,7 +182,7 @@ function init() {
   mark.events.add('mouseenter', function(e) {
     var target = e.get('target');
     target.options.set({iconLayout: 'default#image',
-    iconImageHref: '../img/pin.svg',
+    iconImageHref: './img/pin.svg',
     iconImageSize: [49, 75]});
   });
 
@@ -190,7 +190,7 @@ function init() {
   mark.events.add('mouseleave', function(e) {
     var target = e.get('target');
     target.options.set({iconLayout: 'default#image',
-    iconImageHref: '../img/pin.svg',
+    iconImageHref: './img/pin.svg',
     iconImageSize: [30, 42]});
   });
   myMap.geoObjects.add(mark);
@@ -215,35 +215,35 @@ const pets = [
     name: 'Сара ждёт,',
     text: ' когда найдётся её человек',
     pictureName: 'sara',
-    extention: 'png'
+    extention: 'jpg'
   },
   {
     id: 'Борис',
     name: 'Борис ждёт,',
     text: ' когда найдётся его человек',
     pictureName: 'boris',
-    extention: 'png'
+    extention: 'jpg'
   },
   {
     id: 'Луи',
     name: 'Луи ждёт,',
     text: ' когда найдётся его человек',
     pictureName: 'lui',
-    extention: 'png'
+    extention: 'jpg'
   },
   {
     id: 'Питер',
     name: 'Питер ждёт,',
     text: ' когда найдётся его человек',
     pictureName: 'piter',
-    extention: 'png'
+    extention: 'jpg'
   },
   {
     id: 'Кенни',
     name: 'Кенни ждёт,',
     text: ' когда найдётся его человек',
     pictureName: 'kenni',
-    extention: 'png'
+    extention: 'jpg'
   }
 ];
 

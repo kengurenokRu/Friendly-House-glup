@@ -9,7 +9,7 @@
     <link rel="preload" href="./fonts/HelveticaNeueCyr-300.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/HelveticaNeueCyr-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/HelveticaNeueCyr-500.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="./img/sara.png" as="image">
+    <link rel="preload" href="./img/sara.jpg" as="image">
     <link rel="preload" href="./img/sara.avif" as="image">
     <link rel="preload" href="./img/sara.webp" as="image">
     <script>
@@ -24,7 +24,6 @@
         })
     </script>
     <script defer src="js/index.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=d7aca0e0-c619-44c9-a9d7-57071f8ba034&lang=ru_RU" type="text/javascript"></script>
     <title>Friendly House</title>
 </head>
 
@@ -52,7 +51,7 @@
                 </h2>
                 <div class="top__button">
                     <button class="paw-button top__paw-button" type="submit">
-                        <img loading = "lazy" class="paw-picture-button" src="img/paw.svg" alt="Изображене лапки животного" width="111"
+                        <img class="paw-picture-button" src="img/paw.svg" alt="Изображене лапки животного" width="111"
                             height="101">
                         <span class="paw-text-button">Жми на лапку, чтобы помочь!</span>
                     </button>
@@ -62,7 +61,7 @@
                         <picture class="top__pet-pic">
                             <source class="top__pet-source" srcset="./img/boris80.avif" type="image/avif">
                             <source class="top__pet-source" srcset="./img/boris80.webp" type="image/webp">
-                            <img loading = "lazy" class="top__pet-picture" src="./img/boris80.png" alt="Борис" width="80" height="80">
+                            <img class="top__pet-picture" src="./img/boris80.jpg" alt="Борис" width="80" height="80">
                         </picture>
                         <span class="top__pet-text">Борис</span>
                     </button>
@@ -70,7 +69,7 @@
                         <picture class="top__pet-pic">
                             <source class="top__pet-source" srcset="./img/lui80.avif" type="image/avif">
                             <source class="top__pet-source" srcset="./img/lui80.webp" type="image/webp">
-                            <img loading = "lazy" class="top__pet-picture" src="./img/lui80.png" alt="Луи" width="80" height="80">
+                            <img loading = "lazy" class="top__pet-picture" src="./img/lui80.jpg" alt="Луи" width="80" height="80">
                         </picture>
                         <span class="top__pet-text">Луи</span>
                     </button>
@@ -78,7 +77,7 @@
                         <picture class="top__pet-pic">
                             <source class="top__pet-source" srcset="./img/piter80.avif" type="image/avif">
                             <source class="top__pet-source" srcset="./img/piter80.webp" type="image/webp">
-                            <img loading = "lazy" class="top__pet-picture" src="./img/piter80.png" alt="Питер" width="80" height="80">
+                            <img loading = "lazy" class="top__pet-picture" src="./img/piter80.jpg" alt="Питер" width="80" height="80">
                         </picture>
                         <span class="top__pet-text">Питер</span>
                     </button>
@@ -86,7 +85,7 @@
                         <picture class="top__pet-pic">
                             <source class="top__pet-source" srcset="./img/kenni80.avif" type="image/avif">
                             <source class="top__pet-source" srcset="./img/kenni80.webp" type="image/webp">
-                            <img loading = "lazy" class="top__pet-picture" src="./img/kenni80.png" alt="Изображение собаки" width="80"
+                            <img loading = "lazy" class="top__pet-picture" src="./img/kenni80.jpg" alt="Изображение собаки" width="80"
                                 height="80">
                         </picture>
                         <span class="top__pet-text">Кенни</span>
@@ -128,7 +127,7 @@
                             <picture>
                                 <source srcset="./img/project1.avif" type="image/avif">
                                 <source srcset="./img/project1.webp" type="image/webp">
-                                <img loading = "lazy" class="our-project__img-card" src="./img/project1.jfif"
+                                <img loading = "lazy" class="our-project__img-card" src="./img/project1.jpg"
                                     alt="Изображение сабаки в конуре в виде домика" width="280" height="180">
                             </picture>
                             <h3 class="our-project__title-card">Новый дом для животных</h3>
@@ -146,7 +145,7 @@
                             <picture>
                                 <source srcset="./img/project2.avif" type="image/avif">
                                 <source srcset="./img/project2.webp" type="image/webp">
-                                <img loading = "lazy" class="our-project__img-card" src="./img/project2.jfif"
+                                <img loading = "lazy" class="our-project__img-card" src="./img/project2.jpg"
                                     alt="Изображение сабаки в курточке" width="280" height="180">
                             </picture>
                             <h3 class="our-project__title-card">Маленькие модники</h3>
@@ -162,7 +161,7 @@
                             <picture>
                                 <source srcset="./img/project3.avif" type="image/avif">
                                 <source srcset="./img/project3.webp" type="image/webp">
-                                <img loading = "lazy" class="our-project__img-card" src="./img/project3.jfif"
+                                <img loading = "lazy" class="our-project__img-card" src="./img/project3.jpg"
                                     alt="Изображение девушки с собакой" width="280" height="180">
                             </picture>
                             <h3 class="our-project__title-card">Поиграй со мной!</h3>
@@ -177,7 +176,7 @@
                             <picture>
                                 <source srcset="./img/project4.avif" type="image/avif">
                                 <source srcset="./img/project4.webp" type="image/webp">
-                                <img loading = "lazy" class="our-project__img-card" src="./img/project4.jfif"
+                                <img loading = "lazy" class="our-project__img-card" src="./img/project4.jpg"
                                     alt="Изображение облизывающийся сабаки" width="280" height="180">
                             </picture>
                             <h3 class="our-project__title-card">Конкурс “Лучшее фото”</h3>
@@ -205,7 +204,7 @@
                                     <picture>
                                         <source srcset="./img/project6.avif" type="image/avif">
                                         <source srcset="./img/project6.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project6.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project6.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -213,7 +212,7 @@
                                     <picture>
                                         <source srcset="./img/project7.avif" type="image/avif">
                                         <source srcset="./img/project7.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project7.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project7.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -221,7 +220,7 @@
                                     <picture>
                                         <source srcset="./img/project8.avif" type="image/avif">
                                         <source srcset="./img/project8.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project8.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project8.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -229,7 +228,7 @@
                                     <picture>
                                         <source srcset="./img/project9.avif" type="image/avif">
                                         <source srcset="./img/project9.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project9.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project9.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -237,7 +236,7 @@
                                     <picture>
                                         <source srcset="./img/project10.avif" type="image/avif">
                                         <source srcset="./img/project10.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project10.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project10.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -245,7 +244,7 @@
                                     <picture>
                                         <source srcset="./img/project11.avif" type="image/avif">
                                         <source srcset="./img/project11.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project11.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project11.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -253,7 +252,7 @@
                                     <picture>
                                         <source srcset="./img/project12.avif" type="image/avif">
                                         <source srcset="./img/project12.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project12.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project12.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -261,7 +260,7 @@
                                     <picture>
                                         <source srcset="./img/project13.avif" type="image/avif">
                                         <source srcset="./img/project13.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project13.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project13.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -269,7 +268,7 @@
                                     <picture>
                                         <source srcset="./img/project14.avif" type="image/avif">
                                         <source srcset="./img/project14.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project14.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project14.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -277,7 +276,7 @@
                                     <picture>
                                         <source srcset="./img/project15.avif" type="image/avif">
                                         <source srcset="./img/project15.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project15.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project15.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -285,7 +284,7 @@
                                     <picture>
                                         <source srcset="./img/project16.avif" type="image/avif">
                                         <source srcset="./img/project16.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project16.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project16.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -293,7 +292,7 @@
                                     <picture>
                                         <source srcset="./img/project17.avif" type="image/avif">
                                         <source srcset="./img/project17.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project17.jfif"
+                                        <img loading = "lazy" class="our-project__img-card-mini" src="./img/project17.jpg"
                                             alt="Разные проекты" width="80" height="70">
                                     </picture>
                                 </a>
@@ -319,25 +318,25 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide help__swiper-slide">
                                             <picture>
-                                                <source srcset="img/help-us-1.avif" type="image/avif">
-                                                <source srcset="img/help-us-1.webp" type="image/webp">
-                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-1.jpg"
+                                                <source srcset="img/help-us-1-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-1-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-1-slider.jpg"
                                                     alt="Фото кролика с морковкой" width="180" height="139">
                                             </picture>
                                         </div>
                                         <div class="swiper-slide help__swiper-slide">
                                             <picture>
-                                                <source srcset="img/help-us-2.avif" type="image/avif">
-                                                <source srcset="img/help-us-2.webp" type="image/webp">
-                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-2.jpg"
+                                                <source srcset="img/help-us-2-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-2-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-2-slider.jpg"
                                                     alt="Фото облизывающийся собаки" width="180" height="139">
                                             </picture>
                                         </div>
                                         <div class="swiper-slide help__swiper-slide">
                                             <picture>
-                                                <source srcset="img/help-us-3.avif" type="image/avif">
-                                                <source srcset="img/help-us-3.webp" type="image/webp">
-                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-3.jpg"
+                                                <source srcset="img/help-us-3-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-3-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-3-slider.jpg"
                                                     alt="Фото собаки в медикинском конусе" width="380" height="298">
                                             </picture>
                                         </div>
@@ -417,25 +416,25 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide help__swiper-slide">
                                             <picture>
-                                                <source srcset="img/help-us-5.avif" type="image/avif">
-                                                <source srcset="img/help-us-5.webp" type="image/webp">
-                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-5.jpg" alt="Фото кошки"
+                                                <source srcset="img/help-us-5-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-5-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-5-slider.jpg" alt="Фото кошки"
                                                     width="280" height="382">
                                             </picture>
                                         </div>
                                         <div class="swiper-slide help__swiper-slide">
                                             <picture>
-                                                <source srcset="img/help-us-6.avif" type="image/avif">
-                                                <source srcset="img/help-us-6.webp" type="image/webp">
-                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-6.jpg"
+                                                <source srcset="img/help-us-6-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-6-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-6-slider.jpg"
                                                     alt="Фото кошки и руки человека" width="280" height="181">
                                             </picture>
                                         </div>
                                         <div class="swiper-slide help__swiper-slide">
                                             <picture>
-                                                <source srcset="img/help-us-7.avif" type="image/avif">
-                                                <source srcset="img/help-us-7.webp" type="image/webp">
-                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-7.jpg"
+                                                <source srcset="img/help-us-7-slider.avif" type="image/avif">
+                                                <source srcset="img/help-us-7-slider.webp" type="image/webp">
+                                                <img loading = "lazy" class="help__swiper-img" src="img/help-us-7-slider.jpg"
                                                     alt="Фото мужчины обнимающего собаку" width="280" height="181">
                                             </picture>
                                         </div>
@@ -487,7 +486,7 @@
                             <picture>
                                 <source srcset="./img/pets1.avif" type="image/avif">
                                 <source srcset="./img/pets1.webp" type="image/webp">
-                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets1.jfif" alt="Твинки и Пинки, 2 месяца"
+                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets1.jpg" alt="Твинки и Пинки, 2 месяца"
                                     width="480" height="280">
                             </picture>
                             <figcaption class="our-pets__pet-caption">Твинки и Пинки, 2 месяца</figcaption>
@@ -498,7 +497,7 @@
                             <picture>
                                 <source srcset="./img/pets2.avif" type="image/avif">
                                 <source srcset="./img/pets2.webp" type="image/webp">
-                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets2.jfif" alt="Мурзик, 6 месяцев"
+                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets2.jpg" alt="Мурзик, 6 месяцев"
                                     width="280" height="280">
                             </picture>
                             <figcaption class="our-pets__pet-caption">Мурзик, 6 месяцев</figcaption>
@@ -509,7 +508,7 @@
                             <picture>
                                 <source srcset="./img/pets3.avif" type="image/avif">
                                 <source srcset="./img/pets3.webp" type="image/webp">
-                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets3.jfif" alt="Джек, 1 год" width="280"
+                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets3.jpg" alt="Джек, 1 год" width="280"
                                     height="280">
                             </picture>
                             <figcaption class="our-pets__pet-caption">Джек, 1 год</figcaption>
@@ -520,7 +519,7 @@
                             <picture>
                                 <source srcset="./img/pets4.avif" type="image/avif">
                                 <source srcset="./img/pets4.webp" type="image/webp">
-                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets4.jfif" alt="Джерри, 3 недели" width="280"
+                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets4.jpg" alt="Джерри, 3 недели" width="280"
                                     height="280">
                             </picture>
                             <figcaption class="our-pets__pet-caption">Джерри, 3 недели</figcaption>
@@ -531,7 +530,7 @@
                             <picture>
                                 <source srcset="./img/pets5-6.avif" type="image/avif">
                                 <source srcset="./img/pets5-6.webp" type="image/webp">
-                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets5-6.jfif" alt="Рокки и Сеня, 2 и 3 года"
+                                <img loading = "lazy" class="our-pets__pet-img" src="./img/pets5-6.jpg" alt="Рокки и Сеня, 2 и 3 года"
                                     width="180" height="280">
                             </picture>
                             <figcaption class="our-pets__pet-caption">Рокки и Сеня, 2 и 3 года</figcaption>
@@ -542,7 +541,7 @@
                             <picture>
                                 <source srcset="./img/pets7.avif" type="image/avif">
                                 <source srcset="./img/pets7.webp" type="image/webp">
-                                <img loading = "lazy" class="our-pets__pet-img our-pets__pet-img_big" src="./img/pets7.jfif"
+                                <img loading = "lazy" class="our-pets__pet-img our-pets__pet-img_big" src="./img/pets7.jpg"
                                     alt="Миша (кот) и Ричард (пёс), 3 года и 5 лет" width="380" height="650">
                             </picture>
                             <figcaption class="our-pets__pet-caption">Миша (кот) и Ричард (пёс), 3 года и 5 лет
@@ -556,9 +555,9 @@
                             <div class="swiper-slide our-pets__swiper-slide">
                                 <figure class="our-pets__swiper-picture-block">
                                     <picture>
-                                        <source srcset="./img/pets1.avif" type="image/avif">
-                                        <source srcset="./img/pets1.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets1.jfif"
+                                        <source srcset="./img/pets1-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets1-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets1-slider.jpg"
                                             alt="Твинки и Пинки, 2 месяца" width="480" height="280">
                                     </picture>
                                     <figcaption class="our-pets__swiper-pet-caption">Твинки и Пинки, 2 месяца
@@ -568,9 +567,9 @@
                             <div class="swiper-slide our-pets__swiper-slide">
                                 <figure class="our-pets__swiper-picture-block">
                                     <picture>
-                                        <source srcset="./img/pets2.avif" type="image/avif">
-                                        <source srcset="./img/pets2.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets2.jfif"
+                                        <source srcset="./img/pets2-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets2-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets2-slider.jpg"
                                             alt="Мурзик, 6 месяцев" width="280" height="280">
                                     </picture>
                                     <figcaption class="our-pets__swiper-pet-caption">Мурзик, 6 месяцев</figcaption>
@@ -579,9 +578,9 @@
                             <div class="swiper-slide our-pets__swiper-slide">
                                 <figure class="our-pets__swiper-picture-block">
                                     <picture>
-                                        <source srcset="./img/pets7.avif" type="image/avif">
-                                        <source srcset="./img/pets7.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets7.jfif"
+                                        <source srcset="./img/pets7-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets7-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets7-slider.jpg"
                                             alt="Миша (кот) и Ричард (пёс), 3 года и 5 лет" width="380" height="650">
                                     </picture>
                                     <figcaption class="our-pets__swiper-pet-caption">Миша (кот) и Ричард (пёс), 3 года и
@@ -592,9 +591,9 @@
                             <div class="swiper-slide our-pets__swiper-slide">
                                 <figure class="our-pets__swiper-picture-block">
                                     <picture>
-                                        <source srcset="./img/pets3.avif" type="image/avif">
-                                        <source srcset="./img/pets3.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets3.jfif" alt="Джек, 1 год"
+                                        <source srcset="./img/pets3-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets3-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets3-slider.jpg" alt="Джек, 1 год"
                                             width="280" height="280">
                                     </picture>
                                     <figcaption class="our-pets__swiper-pet-caption">Джек, 1 год</figcaption>
@@ -603,9 +602,9 @@
                             <div class="swiper-slide our-pets__swiper-slide">
                                 <figure class="our-pets__swiper-picture-block">
                                     <picture>
-                                        <source srcset="./img/pets4.avif" type="image/avif">
-                                        <source srcset="./img/pets4.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets4.jfif"
+                                        <source srcset="./img/pets4-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets4-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets4-slider.jpg"
                                             alt="Джерри, 3 недели" width="280" height="280">
                                     </picture>
                                     <figcaption class="our-pets__swiper-pet-caption">Джерри, 3 недели</figcaption>
@@ -614,9 +613,9 @@
                             <div class="swiper-slide our-pets__swiper-slide">
                                 <figure class="our-pets__swiper-picture-block">
                                     <picture>
-                                        <source srcset="./img/pets5-6.avif" type="image/avif">
-                                        <source srcset="./img/pets5-6.webp" type="image/webp">
-                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets5-6.png"
+                                        <source srcset="./img/pets5-6-slider.avif" type="image/avif">
+                                        <source srcset="./img/pets5-6-slider.webp" type="image/webp">
+                                        <img loading = "lazy" class="our-pets__swiper-pet-img" src="./img/pets5-6-slider.jpg"
                                             alt="Рокки и Сеня, 2 и 3 года" width="180" height="280">
                                     </picture>
                                     <figcaption class="our-pets__swiper-pet-caption">Рокки и Сеня, 2 и 3 года
@@ -694,7 +693,7 @@
             <div class="footer__sosial-block">
                 <figure>
                     <img loading = "lazy" class="footer__logo" src="img/logo-footer.svg" alt="Friendly House- приют для животных"
-                        width="358" height="72">
+                        width="358" height="42">
                     <figcaption class="footer__logo-text">приют для животных Friendly House® 2011-2021</figcaption>
                 </figure>
                 <div class="footer__sosial-list-block">
@@ -836,5 +835,6 @@
         </div>
     </div>
 </body>
-
+<script src="https://api-maps.yandex.ru/2.1/?apikey=d7aca0e0-c619-44c9-a9d7-57071f8ba034&lang=ru_RU" type="text/javascript"></script>
+    
 </html>
