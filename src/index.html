@@ -10,8 +10,8 @@
     <link rel="preload" href="./fonts/HelveticaNeueCyr-300.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/HelveticaNeueCyr-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./fonts/HelveticaNeueCyr-500.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="prefetch prerender" href="./img/sara-mini.jpg" />
-    <link rel="prefetch prerender" href="./img/sara.jpg" />
+    <link rel="preload" href="./img/sara-mini.jpg" as="image"/>
+    <link rel="preload" href="./img/sara.jpg" as="image"/>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const createLink = url => {
@@ -51,7 +51,7 @@
                 <source media="(max-width: 700px)" srcset="./img/sara-mini.avif" />
                 <source class="top__back-source" srcset="./img/sara.webp" type="image/webp">
                 <source media="(max-width: 700px)" srcset="./img/sara-mini.webp" />
-                <img class="top__back-picture" src="./img/sara.jpg" alt="Борис" srcset="./img/sara-mini.jpg 700w">
+                <img loading="lazy" class="top__back-picture" src="./img/sara.jpg" alt="Борис" srcset="./img/sara-mini.jpg 700w">
             </picture>
             <div class="container top__container">
                 <h2 class="title top__title"><span class="top__title-orange">Сара ждёт,</span>
