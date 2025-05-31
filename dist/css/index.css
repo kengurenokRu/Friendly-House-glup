@@ -226,6 +226,8 @@ body {
 
 .header__logo {
   padding-left: 176px;
+  width: 356px;
+  height: auto;
 }
 
 .top {
@@ -892,6 +894,7 @@ body {
 
 .form__picture-button {
   width: 73px;
+  height: auto;
 }
 
 .form__text-button {
@@ -1021,6 +1024,7 @@ body {
 
 .footer__logo {
   width: 358px;
+  height: auto;
 }
 
 .footer__logo-text {
@@ -1844,10 +1848,10 @@ body {
   .top__back-picture {
     width: 270px;
     height: 270px;
-    -webkit-transform: translate(-50%, -80%);
-    -moz-transform: translate(-50%, -80%);
-    -ms-transform: translate(-50%, -80%);
-    transform: translate(-50%, -80%);
+    -webkit-transform: translate(-50%, -74%);
+    -moz-transform: translate(-50%, -74%);
+    -ms-transform: translate(-50%, -74%);
+    transform: translate(-50%, -74%);
   }
 
   .top__title {

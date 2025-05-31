@@ -212,6 +212,7 @@
 
     &__logo {
         width: 358px;
+        height: auto;
 
         @include laptop {
             width: 300px;

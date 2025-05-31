@@ -48,6 +48,8 @@
 
     &__logo {
         padding-left: 176px;
+        width: 356px;
+        height: auto;
 
         @include laptop {
             width: 300px;
