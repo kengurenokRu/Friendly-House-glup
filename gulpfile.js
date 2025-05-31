@@ -62,7 +62,7 @@ const path = {
       'src/js/index.js'],
     img: 'src/img/**/*.*',
     svg: 'src/svg/**/*.svg',
-    imgF: 'src/img/**/*.{jpg,jpeg,jfif,png}',
+    imgF: 'src/img/**/*.{jpg,jpeg ,png}',
     assets: [
       'src/fonts/**/*.*',
       'src/icons/**/*.*',
@@ -232,7 +232,7 @@ export const js = () =>
 
 export const img = () =>
   gulp
-    .src(path.src.img)
+    .src(path.src.img, {encoding: false})
     // .pipe(gulpif(!dev, tinypng({
     // 	key: 'API_KEY',
     // 	summarize: true,
@@ -269,7 +269,7 @@ export const img = () =>
 
 export const svg = () =>
   gulp
-    .src(path.src.svg)
+    .src(path.src.svg, {encoding: false})
     .pipe(
       svgSprite({
         mode: {
@@ -288,7 +288,7 @@ export const svg = () =>
 
 export const webp = () =>
   gulp
-    .src(path.src.imgF)
+    .src(path.src.imgF, {encoding: false})
     .pipe(
       gulpWebp({
         quality: dev ? 100 : 60,
@@ -303,7 +303,7 @@ export const webp = () =>
 
 export const avif = () =>
   gulp
-    .src(path.src.imgF)
+    .src(path.src.imgF, {encoding: false})
     .pipe(
       gulpAvif({
         quality: dev ? 100 : 50,
