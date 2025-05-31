@@ -270,7 +270,7 @@ body {
     position: absolute;
     left: 0;
     content: '';
-    background-image: url('../img/call.svg');   
+    background-image: url('./img/call.svg');   
     background-size: contain;
     background-repeat: no-repeat;
     width: 24px;
@@ -281,7 +281,7 @@ body {
     position: absolute;
     left: 0;
     content: '';
-    background-image: url('../img/email.svg');    
+    background-image: url('./img/email.svg');    
     background-size: contain;
     background-repeat: no-repeat;
     width: 24px;

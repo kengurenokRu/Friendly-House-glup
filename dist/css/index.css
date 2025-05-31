@@ -8,28 +8,28 @@
   font-family: "Comfortaa";
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/Comfortaa-400.woff2") format("woff2"), url("../fonts/Comfortaa-400.woff") format("woff");
+  src: url("./fonts/Comfortaa-400.woff2") format("woff2"), url("./fonts/Comfortaa-400.woff") format("woff");
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
   font-weight: 300;
   font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-300.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-300.woff") format("woff");
+  src: url("./fonts/HelveticaNeueCyr-300.woff2") format("woff2"), url("./fonts/HelveticaNeueCyr-300.woff") format("woff");
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-400.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-400.woff") format("woff");
+  src: url("./fonts/HelveticaNeueCyr-400.woff2") format("woff2"), url("./fonts/HelveticaNeueCyr-400.woff") format("woff");
 }
 
 @font-face {
   font-family: "HelveticaNeueCyr";
   font-weight: 500;
   font-display: swap;
-  src: url("../fonts/HelveticaNeueCyr-500.woff2") format("woff2"), url("../fonts/HelveticaNeueCyr-500.woff") format("woff");
+  src: url("./fonts/HelveticaNeueCyr-500.woff2") format("woff2"), url("./fonts/HelveticaNeueCyr-500.woff") format("woff");
 }
 
 /*@font-face {
@@ -207,7 +207,7 @@ body {
   position: absolute;
   left: 0;
   content: "";
-  background-image: url("../img/call.svg");
+  background-image: url("./img/call.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 24px;
@@ -218,7 +218,7 @@ body {
   position: absolute;
   left: 0;
   content: "";
-  background-image: url("../img/email.svg");
+  background-image: url("./img/email.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 24px;
