@@ -1,7 +1,7 @@
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other entry modules.
-(() => {
+!function() {
 /*! jQuery v3.7.1 | (c) OpenJS Foundation and other contributors | jquery.org/license */
 !function (e, t) {
   "use strict";
@@ -3276,10 +3276,9 @@
     return ie.$ === ce && (ie.$ = nn), e && ie.jQuery === ce && (ie.jQuery = tn), ce;
   }, "undefined" == typeof e && (ie.jQuery = ie.$ = ce), ce;
 });
-})();
-
+}();
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other entry modules.
-(() => {
+!function() {
 /**
  * This work is licensed under the W3C Software and Document License
  * (http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).
@@ -3988,10 +3987,9 @@
     });
   }
 })();
-})();
-
+}();
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other entry modules.
-(() => {
+!function() {
 /*! jQuery UI - v1.14.1 - 2025-05-05
 * https://jqueryui.com
 * Includes: widget.js, keycode.js, unique-id.js, widgets/accordion.js
@@ -4540,10 +4538,9 @@
     }
   });
 });
-})();
-
+}();
 // This entry needs to be wrapped in an IIFE because it needs to be isolated against other entry modules.
-(() => {
+!function() {
 
 ;// ./node_modules/swiper/shared/ssr-window.esm.mjs
 /**
@@ -14875,7 +14872,6 @@ $('.modal-form__form').submit(function (event) {
   });
   modalForm.hide(500);
 });
-})();
-
+}();
 /******/ })()
 ;

@@ -6,6 +6,10 @@
   "dev": "node --no-experimental-require-module ./node_modules/gulp/bin/gulp.js",
   "build": "gulp build"
  },
+ "browserslist": [
+  "cover 99.5%",
+  "not IE 11"
+],
  "type": "module",
  "repository": "",
  "keywords": [],
