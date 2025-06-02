@@ -136,12 +136,14 @@
     }
 
     &__input {
-        width: 280px;
+        width: 260px;
         height: 40px;
         border: none;
+        padding-left: 10px;
+        padding-right: 10px;
 
         @include laptop {
-            width: 200px;
+            width: 180px;
             height: 35px;
         }
     }
@@ -157,6 +159,10 @@
     }
 
     &__label_block {
+        display: block;
+    }
+
+    &__input_block{
         display: block;
     }
 

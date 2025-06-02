@@ -156,7 +156,7 @@ body {
   position: absolute;
   left: 0;
   content: "";
-  background-image: url("../img/call.svg");
+  background-image: url("./dist/img/call.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 24px;
@@ -167,7 +167,7 @@ body {
   position: absolute;
   left: 0;
   content: "";
-  background-image: url("../img/email.svg");
+  background-image: url("./dist/img/email.svg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 24px;
@@ -773,9 +773,11 @@ body {
 }
 
 .form__input {
-  width: 280px;
+  width: 260px;
   height: 40px;
   border: none;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .form__input:focus {
@@ -788,6 +790,10 @@ body {
 }
 
 .form__label_block {
+  display: block;
+}
+
+.form__input_block {
   display: block;
 }
 
@@ -1258,7 +1264,7 @@ body {
   }
 
   .form__input {
-    width: 200px;
+    width: 180px;
     height: 35px;
   }
 
