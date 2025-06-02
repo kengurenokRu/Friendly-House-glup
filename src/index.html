@@ -23,8 +23,7 @@
             createLink('css/index.min.css');
         })
     </script>
-    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=d7aca0e0-c619-44c9-a9d7-57071f8ba034&lang=ru_RU"
-        type="text/javascript"></script>
+    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=d7aca0e0-c619-44c9-a9d7-57071f8ba034&lang=ru_RU"></script>
     <script defer src="js/index.min.js"></script>
     <title>Friendly House</title>
 </head>
@@ -32,7 +31,7 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <button class="header__burger" aria-label="Открыть меню" aria-haspopup="menu">
+            <button class="header__burger" aria-label="Открыть меню" aria-haspopup="menu" type = "button">
                 <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" tabindex="0">
                     <rect class="header__burger-border" width="40" height="3" rx="1" />
                     <rect class="header__burger-border" y="9" width="40" height="3" rx="1" />
@@ -44,14 +43,14 @@
         </div>
     </header>
     <main>
-        <h1 class="title_hidden">Friendly House</h1>
+        <h1 class="title title_hidden">Friendly House</h1>
         <section class="section top" id="top">
             <picture class="top__background">
                 <source class="top__back-source" srcset="./img/sara.avif" type="image/avif">
                 <source media="(max-width: 700px)" srcset="./img/sara-mini.avif" />
                 <source class="top__back-source" srcset="./img/sara.webp" type="image/webp">
                 <source media="(max-width: 700px)" srcset="./img/sara-mini.webp" />
-                <img loading="lazy" class="top__back-picture" src="./img/sara.jpg" alt="Борис" srcset="./img/sara-mini.jpg 700w">
+                <img loading="lazy" class="top__back-picture" src="./img/sara.jpg" width="450" height="450" alt="Борис" srcset="./img/sara-mini.jpg 700w" sizes="(max-width: 700px) 270px, 270px">
             </picture>
             <div class="container top__container">
                 <h2 class="title top__title"><span class="top__title-orange">Сара ждёт,</span>
@@ -487,7 +486,7 @@
                         </div>
                     </li>
                 </ol>
-                <button class="paw-button" type="submit">
+                <button class="paw-button" type="button">
                     <img loading="lazy" class="paw-picture-button" src="./img/paw.svg" alt="Изображене лапки животного"
                         width="111" height="101">
                     <span class="paw-text-button">Жми на лапку, чтобы помочь!</span>
@@ -677,11 +676,11 @@
                         <legend class="form__text form__text_margin">Или оставь свои контакты и мы сами свяжемся с
                             тобой!</legend>
                         <div class="form__input-box">
-                            <label class="form__label form_block">Номер телефона
-                                <input class="form__input form_block" type="text" id="tel-sec">
+                            <label class="form__label form__label_block">Номер телефона
+                                <input class="form__input" type="text" id="tel-sec">
                             </label>
-                            <label class="form__label form_block">E-mail
-                                <input class="form__input form_block" type="text" id="email-sec">
+                            <label class="form__label form__label_block">E-mail
+                                <input class="form__input" type="text" id="email-sec">
                             </label>
                         </div>
                     </fieldset>
@@ -794,7 +793,7 @@
     <div class="modal-form" hidden>
         <div class="modal-form__wrapper">
             <form class="form modal-form__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-                <button class="modal-form__close-btn">
+                <button class="modal-form__close-btn" type = "button">
                     <svg class="modal-form__close-btn-img" width="42" height="42" viewBox="0 0 42 42"
                         xmlns="http://www.w3.org/2000/svg">
                         <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)" />
@@ -819,11 +818,11 @@
                     <legend class="form__text form__text_margin">Или оставь свои контакты и мы сами свяжемся с
                         тобой!</legend>
                     <div class="form__input-box">
-                        <label class="form__label form_block">Номер телефона
-                            <input class="form__input form_block" type="text" id="tel">
+                        <label class="form__label form__label_block">Номер телефона
+                            <input class="form__input" type="text" id="tel">
                         </label>
-                        <label class="form__label form_block">E-mail
-                            <input class="form__input form_block" type="text" id="email">
+                        <label class="form__label form__label_block">E-mail
+                            <input class="form__input" type="text" id="email">
                         </label>
                     </div>
                 </fieldset>

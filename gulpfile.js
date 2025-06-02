@@ -384,4 +384,4 @@ export const build = gulp.series(clear, base, critCSS);
 
 //export default gulp.series(develop, css, base, server);
 
-export default gulp.series(clear, css, base, critCSS);
+export default gulp.series(clear, css, base, critCSS, server);

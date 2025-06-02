@@ -787,7 +787,7 @@ body {
   border: none;
 }
 
-.form_block {
+.form__label_block {
   display: block;
 }
 
@@ -819,6 +819,10 @@ body {
 
 .form__text_margin {
   margin-bottom: 20px;
+}
+
+.form__form__input {
+  padding-left: 10px;
 }
 
 .footer {

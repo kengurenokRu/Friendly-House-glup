@@ -156,7 +156,7 @@
         border: none;
     }
 
-    &_block {
+    &__label_block {
         display: block;
     }
 
@@ -213,5 +213,9 @@
             margin-bottom: 20px;
             line-height: 20px;
         }
+    }
+
+    &__form__input{
+        padding-left: 10px;
     }
 }
