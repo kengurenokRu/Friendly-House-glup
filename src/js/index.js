@@ -275,7 +275,7 @@ buttonPets.click(function (e) {
   const text = $('.top__pet-text');
   const backSource = $('.top__back-source');
   const backPic = $('.top__back-picture');
-  
+  /*
   if ($(document).width() > 700) {
     backSource[0].srcset = `./dist/img/${pets[stop].pictureName}.avif`;
     backSource[1].srcset = `./dist/img/${pets[stop].pictureName}.webp`;
@@ -287,7 +287,7 @@ buttonPets.click(function (e) {
     backSource[1].srcset = `./dist/img/${pets[stop].pictureName}-mini.webp`;
     backPic[0].src = `./dist/img/${pets[stop].pictureName}-mini.${pets[stop].extention}`;
     backPic[0].alt = pets[stop].id;
-  };
+  };*/
 
   let k = 0;
   let t = 0;
